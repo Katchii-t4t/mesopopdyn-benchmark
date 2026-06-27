@@ -18,11 +18,15 @@ harness/
   sim_meso.py      the Numba/pure-Python mesoscopic simulator (from upstream)
   potjans.py       PD14 network parameters (from upstream)
   benchmark.py     unified timing harness (warmup, repeats, JSON/CSV out)
+  benchmark_nest.py NEST backends (meso/micro), run on WSL/Linux
   validate.py      quantitative correctness vs published PD14 rates
+  finite_size.py   empirical 1/sqrt(N) fluctuation-scaling test
+  test_harness.py  reproducibility tests (pytest)
   plot.py          figures -> ../figures/
+  setup_nest_wsl.sh one-command NEST install inside WSL
 results/           benchmark + validation outputs (JSON/CSV)
 figures/           generated PNGs
-docs/              FINDINGS.md, PLAN.md
+docs/              FINDINGS.md, METHODS_RESULTS.md, PLAN.md, NEST_SETUP.md
 upstream_reference/  vendored copy of schwalger/mesopopdyn_microcircuit
 ```
 
@@ -38,10 +42,13 @@ Python harness — see `docs/PLAN.md`.
 cd harness
 python validate.py  --scaling 1.0 --T 10          # correctness check (PASS/FAIL)
 python benchmark.py --scalings 0.1 0.5 1.0 --T 10  # timing sweep -> results/
+python finite_size.py                              # 1/sqrt(N) fluctuation test
 python plot.py                                     # figures -> figures/
+python test_harness.py                             # reproducibility tests
 ```
 
 `python benchmark.py --quick` runs a fast smoke configuration.
+For the NEST backends (Linux/WSL only) see `docs/NEST_SETUP.md`.
 
 ## Key results (this machine: Win11, Py3.13, NumPy 2.3, Numba 0.62)
 
@@ -52,3 +59,6 @@ python plot.py                                     # figures -> figures/
 - Numba vs pure Python: **368×**.
 - Down-scaling distorts mean rates (20 Hz err at 10 % size → 0.06 Hz at full
   size); benchmark for *timing* at reduced size, validate *correctness* at full.
+- Finite-size fluctuations of A(t) shrink with N at a fitted slope ≈ **−0.75**
+  (steeper than the naive 1/√N), reflecting the operating-point shift at reduced
+  size. See `docs/METHODS_RESULTS.md` for the full write-up.
