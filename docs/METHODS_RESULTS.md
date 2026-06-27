@@ -1,0 +1,110 @@
+# Mesoscopic Potjans–Diesmann: methods & results (draft)
+
+*Draft seed for an HON3000 project report / benchmark paper. Karthik Senthil
+Ganesh, TU Berlin / BCCN, 2026. Results measured on Windows 11, Python 3.13.9,
+NumPy 2.3.5, Numba 0.62.1; meso-Python/Numba backend. NEST/C cross-backend rows
+pending (run on WSL/Linux per docs/NEST_SETUP.md).*
+
+## 1. Background
+
+The Potjans–Diesmann (2014) cortical microcircuit (PD14) is the standard
+reference model of a 1 mm² cortical column: ~77,000 neurons in 8 populations
+(layers L2/3, L4, L5, L6 × excitatory/inhibitory), ~3×10⁸ synapses. A
+**microscopic** simulation integrates every neuron; a **mesoscopic** simulation
+(Schwalger, Deger & Gerstner, 2017) tracks only the per-population activity
+A(t) = fraction of a population spiking, reducing ~77k equations to 8.
+
+## 2. Model and mathematics
+
+Single neurons are generalized integrate-and-fire (GIF) units with **escape
+(soft-threshold) noise**: the instantaneous firing intensity is a hazard rate
+
+    λ(u) = c · exp((u − V_th) / Δu),
+
+where u is the membrane potential, V_th the threshold, Δu the softness, c a
+rate prefactor. The probability of firing in a step dt follows from survival
+statistics, P_fire = 1 − exp(−∫λ dt), implemented with a trapezoidal estimate
+0.5(λ_old + λ)dt.
+
+At the population level the mesoscopic theory evolves the distribution of times
+since last spike (a refractory-density / quasi-renewal formulation). The
+finite-size stochasticity — the defining feature versus classical mean-field —
+enters as a binomial draw for the number of spiking neurons:
+
+    n ~ Binomial(N, Ābar) / N,
+
+with Ābar the expected fraction. This single relation captures the
+finite-N fluctuations that classical (N→∞) mean-field models (Wilson–Cowan;
+Brunel/Fokker–Planck) discard. Synaptic coupling uses the annealed-average
+connectivity W_av = W ⊙ p_conn and population coupling w = J_s · N.
+
+## 3. Methods (the harness)
+
+A clean, reproducible Python harness was built around the meso simulator:
+- `model_setup.py`: single source of truth for the PD14 mesoscopic parameters
+  (previously duplicated across four per-language driver scripts upstream).
+- `benchmark.py`: timing with an explicit untimed warmup (excluding Numba JIT
+  compilation), R repeats, and machine-readable JSON/CSV output.
+- `validate.py`: quantitative correctness vs published PD14 rates.
+- `finite_size.py`: empirical test of the 1/√N fluctuation law.
+- `plot.py`: figures.
+- `benchmark_nest.py` (+ `setup_nest_wsl.sh`): NEST backends (meso/micro),
+  ready to run on Linux/WSL via the tested upstream MultiPop interface.
+
+## 4. Results
+
+### 4.1 Correctness (full scale, T = 10 s)
+Mesoscopic spontaneous rates match the published PD14 values to a mean absolute
+error of **0.059 Hz**; all 8 populations within ~1–5 % relative error.
+Figure: `validation_rates.png`, `activity_traces.png`.
+
+### 4.2 Runtime is independent of network size
+Wall-clock time for 10 s of biological activity is flat at ~7 s as the network
+grows from 7,717 to 77,169 neurons (10×):
+
+| scaling | neurons | min wall [s] | realtime factor |
+|---------|---------|--------------|-----------------|
+| 0.10    | 7,717   | 7.59         | 1.32×           |
+| 0.25    | 19,292  | 7.05         | 1.42×           |
+| 0.50    | 38,586  | 6.93         | 1.44×           |
+| 1.00    | 77,169  | 6.99         | 1.43×           |
+
+Mesoscopic cost scales with the number of populations (M = 8), not neurons —
+the mechanism behind the ~150× speedup over microscopic simulation reported in
+Schwalger et al. (2017). Figure: `benchmark_scaling.png`.
+
+### 4.3 Implementation speedup
+Identical algorithm, Numba vs pure Python (T = 0.2 s): **368×** (0.15 s vs
+55.2 s). Motivates the compiled / NEST / C backends for parameter sweeps.
+
+### 4.4 Down-scaling distorts mean rates
+Mean absolute rate error vs published values grows sharply at reduced size:
+20.1 Hz (10 %) → 9.5 (25 %) → 3.7 (50 %) → 0.06 Hz (full). Down-scaling the
+column is not rate-neutral; correctness must be validated at full scale
+(consistent with van Albada et al. 2015).
+
+### 4.5 Finite-size fluctuation scaling (measured)
+The steady-state std of A(t) decreases with N with a fitted log-log slope of
+**≈ −0.75** (mean over populations), *steeper* than the naive single-neuron
+binomial law (−0.5). Interpretation: at reduced size the operating point shifts
+(higher, more variable rates; the network sits closer to instability), so
+network-level fluctuations are amplified beyond the pure 1/√N term. This links
+the finite-size noise directly to the down-scaling distortion of §4.4.
+Figure: `finite_size_scaling.png`; data: `results/finite_size_latest.json`.
+
+## 5. Engineering findings (vs upstream)
+- **Benchmark bug:** upstream times the first Numba call, counting ~7 s of JIT
+  compilation as run time (~45× over-report at short bio-times). Fixed via warmup.
+- **Fragmentation:** four per-language scripts with duplicated parameters and a
+  hand-maintained .ods spreadsheet → unified harness + structured output.
+- **No correctness gate:** eyeball plots → quantitative PASS/FAIL.
+- **Off-by-one** in the meso recorder guard (`i <= Nrecord`), fixed.
+
+## 6. Next steps (to make this a contribution, not a reproduction)
+1. Cross-backend rows (meso-NEST, micro-NEST, meso-C) on WSL/Linux; confirm all
+   agree on full-scale rates and reproduce the ~150× micro→meso speedup
+   end-to-end on one machine.
+2. Add the van-Albada correctness triplet (rate dist, CV-ISI, Pearson
+   correlation) for the microscopic runs.
+3. Frame as a systematic, methodology-corrected modern benchmark — the form
+   suited to Frontiers in Neuroinformatics / Neuroinformatics, and to HON3000.
