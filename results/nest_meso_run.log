@@ -1,0 +1,31 @@
+
+             -- N E S T --
+
+ Copyright (C) 2004 The NEST Initiative
+
+ Version: 3.10.0
+ Built  : Jun 12 2026 10:07:53
+
+ This program is provided AS IS and comes with NO WARRANTY.
+ See the file LICENSE for details.
+
+ Problems or suggestions?
+   Visit https://www.nest-simulator.org
+
+ Type 'nest.help()' to find out more about NEST.
+
+=== mesopopdyn NEST benchmark (NEST 3.10.0) ===
+[run ] meso_nest   scaling=0.1  T=10.0s ... /root/miniforge3/envs/nest/lib/python3.11/site-packages/nest/lib/hl_api_helper.py:111: UserWarning:
+Provided for backward compatibility only. Set `nest.verbosity = nest.VerbosityLevel.XYZ` instead.
+/root/miniforge3/envs/nest/lib/python3.11/site-packages/nest/lib/hl_api_helper.py:111: UserWarning:
+SetStatus() is deprecated and will be removed in a future version of NEST. Instead of SetStatus(nrns|conns, args), use nrns|conns.set(args).
+/root/miniforge3/envs/nest/lib/python3.11/site-packages/nest/lib/hl_api_helper.py:111: UserWarning:
+GetStatus() is deprecated and will be removed in a future version of NEST. Instead of GetStatus(nrns|conns, args), use nrns|conns.get(args).
+/root/miniforge3/envs/nest/lib/python3.11/site-packages/numpy/_core/fromnumeric.py:3824: RuntimeWarning:Mean of empty slice
+/root/miniforge3/envs/nest/lib/python3.11/site-packages/numpy/_core/_methods.py:134: RuntimeWarning:invalid value encountered in divide
+min=8.055s (rt x1.24) rate_err=0.295Hz
+[run ] meso_nest   scaling=0.5  T=10.0s ... min=8.837s (rt x1.13) rate_err=0.066Hz
+[run ] meso_nest   scaling=1    T=10.0s ... min=9.901s (rt x1.01) rate_err=0.052Hz
+
+saved: benchmark_nest_20260628_020135.json (+ benchmark_nest_latest.json)
+EXIT=0

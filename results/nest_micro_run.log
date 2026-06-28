@@ -1,0 +1,159 @@
+
+             -- N E S T --
+
+ Copyright (C) 2004 The NEST Initiative
+
+ Version: 3.10.0
+ Built  : Jun 12 2026 10:07:53
+
+ This program is provided AS IS and comes with NO WARRANTY.
+ See the file LICENSE for details.
+
+ Problems or suggestions?
+   Visit https://www.nest-simulator.org
+
+ Type 'nest.help()' to find out more about NEST.
+
+=== mesopopdyn NEST benchmark (NEST 3.10.0) ===
+[run ] micro_nest  scaling=0.1  T=2.0s ... /root/miniforge3/envs/nest/lib/python3.11/site-packages/nest/lib/hl_api_helper.py:111: UserWarning:
+Provided for backward compatibility only. Set `nest.verbosity = nest.VerbosityLevel.XYZ` instead.
+/root/miniforge3/envs/nest/lib/python3.11/site-packages/nest/lib/hl_api_helper.py:111: UserWarning:
+SetStatus() is deprecated and will be removed in a future version of NEST. Instead of SetStatus(nrns|conns, args), use nrns|conns.set(args).
+/root/miniforge3/envs/nest/lib/python3.11/site-packages/nest/lib/hl_api_helper.py:111: UserWarning:
+GetStatus() is deprecated and will be removed in a future version of NEST. Instead of GetStatus(nrns|conns, args), use nrns|conns.get(args).
+/root/miniforge3/envs/nest/lib/python3.11/site-packages/numpy/_core/fromnumeric.py:3824: RuntimeWarning:Mean of empty slice
+/root/miniforge3/envs/nest/lib/python3.11/site-packages/numpy/_core/_methods.py:134: RuntimeWarning:invalid value encountered in divide
+connecting population 0 to 0
+connecting population 1 to 0
+connecting population 2 to 0
+connecting population 3 to 0
+connecting population 4 to 0
+connecting population 5 to 0
+connecting population 6 to 0
+connecting population 7 to 0
+connecting population 0 to 1
+connecting population 1 to 1
+connecting population 2 to 1
+connecting population 3 to 1
+connecting population 4 to 1
+connecting population 5 to 1
+connecting population 6 to 1
+connecting population 7 to 1
+connecting population 0 to 2
+connecting population 1 to 2
+connecting population 2 to 2
+connecting population 3 to 2
+connecting population 4 to 2
+connecting population 5 to 2
+connecting population 6 to 2
+connecting population 7 to 2
+connecting population 0 to 3
+connecting population 1 to 3
+connecting population 2 to 3
+connecting population 3 to 3
+connecting population 4 to 3
+connecting population 5 to 3
+connecting population 6 to 3
+connecting population 7 to 3
+connecting population 0 to 4
+connecting population 1 to 4
+connecting population 2 to 4
+connecting population 3 to 4
+connecting population 4 to 4
+connecting population 5 to 4
+connecting population 6 to 4
+connecting population 7 to 4
+connecting population 0 to 5
+connecting population 1 to 5
+connecting population 2 to 5
+connecting population 3 to 5
+connecting population 4 to 5
+connecting population 5 to 5
+connecting population 6 to 5
+connecting population 7 to 5
+connecting population 0 to 6
+connecting population 1 to 6
+connecting population 2 to 6
+connecting population 3 to 6
+connecting population 4 to 6
+connecting population 5 to 6
+connecting population 6 to 6
+connecting population 7 to 6
+connecting population 0 to 7
+connecting population 1 to 7
+connecting population 2 to 7
+connecting population 3 to 7
+connecting population 4 to 7
+connecting population 5 to 7
+connecting population 6 to 7
+connecting population 7 to 7
+compute moving average with window length 50
+connecting population 0 to 0
+connecting population 1 to 0
+connecting population 2 to 0
+connecting population 3 to 0
+connecting population 4 to 0
+connecting population 5 to 0
+connecting population 6 to 0
+connecting population 7 to 0
+connecting population 0 to 1
+connecting population 1 to 1
+connecting population 2 to 1
+connecting population 3 to 1
+connecting population 4 to 1
+connecting population 5 to 1
+connecting population 6 to 1
+connecting population 7 to 1
+connecting population 0 to 2
+connecting population 1 to 2
+connecting population 2 to 2
+connecting population 3 to 2
+connecting population 4 to 2
+connecting population 5 to 2
+connecting population 6 to 2
+connecting population 7 to 2
+connecting population 0 to 3
+connecting population 1 to 3
+connecting population 2 to 3
+connecting population 3 to 3
+connecting population 4 to 3
+connecting population 5 to 3
+connecting population 6 to 3
+connecting population 7 to 3
+connecting population 0 to 4
+connecting population 1 to 4
+connecting population 2 to 4
+connecting population 3 to 4
+connecting population 4 to 4
+connecting population 5 to 4
+connecting population 6 to 4
+connecting population 7 to 4
+connecting population 0 to 5
+connecting population 1 to 5
+connecting population 2 to 5
+connecting population 3 to 5
+connecting population 4 to 5
+connecting population 5 to 5
+connecting population 6 to 5
+connecting population 7 to 5
+connecting population 0 to 6
+connecting population 1 to 6
+connecting population 2 to 6
+connecting population 3 to 6
+connecting population 4 to 6
+connecting population 5 to 6
+connecting population 6 to 6
+connecting population 7 to 6
+connecting population 0 to 7
+connecting population 1 to 7
+connecting population 2 to 7
+connecting population 3 to 7
+connecting population 4 to 7
+connecting population 5 to 7
+connecting population 6 to 7
+connecting population 7 to 7
+compute moving average with window length 50
+min=51.763s (rt x0.04) rate_err=0.239Hz
+
+saved: benchmark_nest_20260628_020441.json (+ benchmark_nest_latest.json)
+EXIT=0

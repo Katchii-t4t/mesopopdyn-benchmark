@@ -102,7 +102,7 @@ class MultiPop(object):
     def __build_network_common__(self):
         nest.set_verbosity("M_WARNING")
         nest.ResetKernel()
-        nest.SetKernelStatus({'resolution': self.dt*1e3, 'print_time': True, \
+        nest.SetKernelStatus({'resolution': self.dt*1e3, 'print_time': False, \
             'local_num_threads':self.local_num_threads})
         
         self.tau_1_ex = np.ones(self.K) * np.nan

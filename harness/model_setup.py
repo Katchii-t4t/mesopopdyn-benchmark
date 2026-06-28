@@ -87,9 +87,15 @@ def build_params(scaling_factor=1.0, mu=None, hazard_c=10.0, DeltaV=5.0):
     Js[:, :Me] *= (neuron_params['tau_syn_E'] * 1e-3) / neuron_params['cm'] * 1e3
     Js[:, Me:] *= (neuron_params['tau_syn_I'] * 1e-3) / neuron_params['cm'] * 1e3
 
-    # scale network size; coupling strength w = Js * N
-    N = np.round(N * scaling_factor).astype(int)
+    # Coupling strength w = Js * N is computed at FULL size, so that the mean
+    # synaptic input is preserved under down-scaling (the standard convention;
+    # cf. original PDmodel_mesopython.py and van Albada et al. 2015). Only the
+    # population size N that enters the finite-size binomial noise is reduced.
+    # (Earlier this used the down-scaled N for w, which wrongly shifted the mean
+    # input and inflated the apparent "down-scaling rate distortion"; the bug
+    # was caught by meso-Python vs meso-NEST disagreement at scaling=0.1.)
     w = Js * N[np.newaxis, :]
+    N = np.round(N * scaling_factor).astype(int)
 
     params = {
         'mu': mu,
