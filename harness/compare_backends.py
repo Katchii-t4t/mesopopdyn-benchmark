@@ -33,19 +33,27 @@ RESULTS = ROOT / "results"
 FIGURES = ROOT / "figures"
 
 
-def load(name):
-    p = RESULTS / name
-    if not p.exists():
-        return []
-    return json.loads(p.read_text()).get('results', [])
+def load_all():
+    """Glob every benchmark_*.json, keep latest 'ok' row per (backend, scaling)."""
+    best = {}
+    files = sorted(RESULTS.glob("benchmark_*.json"))  # timestamp-sorted
+    for p in files:
+        if p.name.endswith("_latest.json"):
+            continue
+        try:
+            data = json.loads(p.read_text())
+        except Exception:
+            continue
+        for r in data.get('results', []):
+            if r.get('status') != 'ok':
+                continue
+            key = (r['backend'], round(r['scaling'], 6))
+            best[key] = r  # later file (newer timestamp) wins
+    return list(best.values())
 
 
 def main():
-    rows = []
-    for f in ("benchmark_latest.json", "benchmark_nest_latest.json"):
-        for r in load(f):
-            if r.get('status') == 'ok':
-                rows.append(r)
+    rows = load_all()
 
     if not rows:
         print("no results found")

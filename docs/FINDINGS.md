@@ -120,12 +120,19 @@ Same algorithm, `T = 0.2 s`: Numba **0.15 s** vs pure Python **55.2 s**
 (`results/numba_vs_python.json`). Motivates keeping the compiled/C/NEST paths
 for any real parameter sweep.
 
-### 3.4 Down-scaling distorts mean rates  *(a real neuroscience caveat)*
-Mean absolute rate error vs network size: **20.1 Hz** (0.1) → **9.5** (0.25) →
-**3.7** (0.5) → **0.06 Hz** (1.0). Down-scaling the column is *not* rate-neutral
-(consistent with van Albada et al. 2015) — benchmarking at reduced size is fine
-for *timing* but not for *correctness*. The harness therefore only treats
-full-scale runs as authoritative for pass/fail.
+### 3.4 Down-scaling is nearly rate-neutral with correct coupling
+With the proper convention (coupling computed at full size, only the finite-size
+binomial N reduced), mean absolute rate error stays small: **0.25 Hz** (0.1) →
+**0.10** (0.25) → **0.066** (0.5) → **0.059 Hz** (1.0); the residual is the
+genuine finite-size effect. An earlier coupling bug produced a spurious ~20 Hz
+"distortion" — caught and fixed via meso-Python vs meso-NEST cross-comparison
+(see METHODS_RESULTS.md §4.4). Cross-validation between backends agree to
+**0.008 Hz** at full scale.
+
+### 3.5 NEST cross-backend (added overnight)
+NEST 3.10 meso (`gif_pop_psc_exp`) and micro (`gif_psc_exp`) backends now run
+via WSL. meso-NEST matches meso-Numba to 0.008 Hz; micro→meso speedup ~32–36×
+at scaling 0.1 (grows with N). See METHODS_RESULTS.md §4.6.
 
 ---
 

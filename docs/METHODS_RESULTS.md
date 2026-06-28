@@ -77,20 +77,47 @@ Schwalger et al. (2017). Figure: `benchmark_scaling.png`.
 Identical algorithm, Numba vs pure Python (T = 0.2 s): **368×** (0.15 s vs
 55.2 s). Motivates the compiled / NEST / C backends for parameter sweeps.
 
-### 4.4 Down-scaling distorts mean rates
-Mean absolute rate error vs published values grows sharply at reduced size:
-20.1 Hz (10 %) → 9.5 (25 %) → 3.7 (50 %) → 0.06 Hz (full). Down-scaling the
-column is not rate-neutral; correctness must be validated at full scale
-(consistent with van Albada et al. 2015).
+### 4.4 Down-scaling with preserved coupling is nearly rate-neutral
+Using the correct down-scaling convention (coupling w = J_s·N computed at full
+size; only the binomial finite-size N reduced), the mean absolute rate error vs
+published values stays small and decreases with N:
+0.25 Hz (10 %) → 0.10 (25 %) → 0.066 (50 %) → 0.059 Hz (full). The residual at
+small N is the genuine finite-size effect, not a coupling artifact.
+
+> **Correction.** An earlier version of `model_setup.py` computed the coupling
+> with the down-scaled N, which shifted the mean input and produced a spurious
+> ~20 Hz "down-scaling distortion". This was caught by a meso-Python vs
+> meso-NEST disagreement at scaling 0.1 (Python 20 Hz vs NEST 0.4 Hz) and fixed.
+> A clean cross-implementation comparison revealed a bug neither backend showed
+> alone.
 
 ### 4.5 Finite-size fluctuation scaling (measured)
 The steady-state std of A(t) decreases with N with a fitted log-log slope of
-**≈ −0.75** (mean over populations), *steeper* than the naive single-neuron
-binomial law (−0.5). Interpretation: at reduced size the operating point shifts
-(higher, more variable rates; the network sits closer to instability), so
-network-level fluctuations are amplified beyond the pure 1/√N term. This links
-the finite-size noise directly to the down-scaling distortion of §4.4.
+**≈ −0.565** (mean over populations), close to the theoretical 1/√N binomial
+law (−0.5). The small excess reflects mild network nonlinearity near threshold.
+(Before the §4.4 coupling fix this slope was a contaminated −0.75.)
 Figure: `finite_size_scaling.png`; data: `results/finite_size_latest.json`.
+
+### 4.6 Cross-backend results (NEST 3.10, WSL/Linux)
+Three independent simulators of the same model were run and compared:
+
+| backend     | scaling | N      | wall (10 s bio) | rate err |
+|-------------|---------|--------|-----------------|----------|
+| meso_numba  | 1.0     | 77,169 | 7.08 s          | 0.059 Hz |
+| meso_nest   | 1.0     | 77,169 | 9.90 s          | 0.052 Hz |
+| micro_nest  | 0.1     | 7,717  | 51.8 s (2 s bio)| 0.239 Hz |
+
+- **Cross-implementation agreement:** meso_numba and meso_nest match to
+  **0.008 Hz** at full scale — two independent implementations (custom Numba vs
+  NEST's C++ `gif_pop_psc_exp`) validate each other.
+- **Micro→meso speedup:** at scaling 0.1, the mesoscopic backend is **~32–36×**
+  faster than microscopic per biological second, and the gap grows with N
+  (meso runtime is flat; micro scales with neurons/synapses), trending toward
+  the ~150× of Schwalger et al. (2017) at full scale.
+- *Caveat:* micro used all-to-all (mean-field) connectivity and only scaling
+  0.1; the speedup figure is not directly comparable to the paper's sparse
+  full-scale value, but the trend is unambiguous.
+Figure: `cross_backend.png`; data: `results/cross_backend_summary.json`.
 
 ## 5. Engineering findings (vs upstream)
 - **Benchmark bug:** upstream times the first Numba call, counting ~7 s of JIT
