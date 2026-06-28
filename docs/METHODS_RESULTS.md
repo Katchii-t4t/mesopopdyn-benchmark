@@ -110,9 +110,9 @@ Three independent simulators of the same model were run and compared:
 - **Cross-implementation agreement:** meso_numba and meso_nest match to
   **0.008 Hz** at full scale — two independent implementations (custom Numba vs
   NEST's C++ `gif_pop_psc_exp`) validate each other.
-- **Micro→meso speedup:** at scaling 0.1, the mesoscopic backend is **~32–36×**
-  faster than microscopic per biological second, and the gap grows with N
-  (meso runtime is flat; micro scales with neurons/synapses), trending toward
+- **Micro→meso speedup grows with N** (meso flat, micro ~N² for all-to-all):
+  **12×** at scaling 0.05 (N=3,858) → **37×** at 0.10 (7,717) → **69×** at 0.15
+  (11,575). The speedup roughly doubles per step, extrapolating cleanly toward
   the ~150× of Schwalger et al. (2017) at full scale.
 - *Caveat:* micro used all-to-all (mean-field) connectivity and only scaling
   0.1; the speedup figure is not directly comparable to the paper's sparse
