@@ -91,10 +91,11 @@ def main():
               f"time {py['time_min_s']:.2f}s vs {ne['time_min_s']:.2f}s")
 
     # ---- micro vs meso speedup at the same (reduced) scale ----
-    micro = [r for r in rows if r['backend'] == 'micro_nest']
+    micro = [r for r in rows if r['backend'].startswith('micro')]
     for m in micro:
         s = m['scaling']
-        meso_same = [r for r in rows if r['backend'] in ('meso_nest', 'meso_numba')
+        meso_same = [r for r in rows
+                     if r['backend'] in ('meso_nest', 'meso_numba', 'meso_c')
                      and abs(r['scaling'] - s) < 1e-9]
         for ms in meso_same:
             # normalise by T (micro may use a shorter T)
@@ -108,7 +109,7 @@ def main():
                 'meso_s_per_biosec': meso_per_s,
                 'speedup': speedup,
             }
-            print(f"micro_nest vs {ms['backend']} @ scaling {s} "
+            print(f"{m['backend']} vs {ms['backend']} @ scaling {s} "
                   f"(N={m['N_total']}): meso is {speedup:.1f}x faster "
                   f"per bio-second")
 
