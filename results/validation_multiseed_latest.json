@@ -1,0 +1,74 @@
+{
+  "scaling": 1.0,
+  "T": 10.0,
+  "seeds": 10,
+  "N_total": 77169,
+  "per_pop": [
+    {
+      "pop": "L23e",
+      "mean_hz": 0.9707320928573608,
+      "std_hz": 0.002675531432032585,
+      "target_hz": 0.971,
+      "abs_err_hz": 0.0002679071426391344,
+      "within_1sigma": true
+    },
+    {
+      "pop": "L4e",
+      "mean_hz": 4.6766510009765625,
+      "std_hz": 0.005364692769944668,
+      "target_hz": 4.746,
+      "abs_err_hz": 0.06934899902343794,
+      "within_1sigma": false
+    },
+    {
+      "pop": "L5e",
+      "mean_hz": 8.187545776367188,
+      "std_hz": 0.03435419872403145,
+      "target_hz": 8.142,
+      "abs_err_hz": 0.04554577636718804,
+      "within_1sigma": false
+    },
+    {
+      "pop": "L6e",
+      "mean_hz": 0.9909690618515015,
+      "std_hz": 0.0031949516851454973,
+      "target_hz": 0.991,
+      "abs_err_hz": 3.093814849852716e-05,
+      "within_1sigma": true
+    },
+    {
+      "pop": "L23i",
+      "mean_hz": 2.8598577976226807,
+      "std_hz": 0.0032567819580435753,
+      "target_hz": 2.868,
+      "abs_err_hz": 0.008142202377319219,
+      "within_1sigma": false
+    },
+    {
+      "pop": "L4i",
+      "mean_hz": 5.65820837020874,
+      "std_hz": 0.0018572058761492372,
+      "target_hz": 5.396,
+      "abs_err_hz": 0.2622083702087403,
+      "within_1sigma": false
+    },
+    {
+      "pop": "L5i",
+      "mean_hz": 9.038310050964355,
+      "std_hz": 0.005282469093799591,
+      "target_hz": 9.078,
+      "abs_err_hz": 0.039689949035643934,
+      "within_1sigma": false
+    },
+    {
+      "pop": "L6i",
+      "mean_hz": 7.541909217834473,
+      "std_hz": 0.00378612638451159,
+      "target_hz": 7.523,
+      "abs_err_hz": 0.01890921783447297,
+      "within_1sigma": false
+    }
+  ],
+  "mean_abs_err_hz": 0.05551792001724251,
+  "n_within_1sigma": 2
+}
