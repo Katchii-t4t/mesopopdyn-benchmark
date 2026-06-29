@@ -131,8 +131,20 @@ Full-scale mesoscopic, 10 s bio (Julia at 2 s bio, see note):
   model stays accurate (0.25 Hz) over the same range. Validating at reduced
   scale therefore needs either full-scale runs or van-Albada 1/√K weight
   adjustment — the all-to-all comparison hid this entirely.
-- *Caveats:* single seed so far (multi-seed averaging is the next step); Julia
-  ran at T=2 s; only sim time (not setup or energy) is measured.
+- **Multi-seed (correctness error bars).** Seed-to-seed variance of the meso
+  rates is tiny (0.002–0.03 Hz) — the model is highly reproducible. The residual
+  deviations from published rates (notably L4i, 0.26 Hz) therefore are
+  **systematic, not noise** (only 2/8 populations within 1 std). Figure:
+  `validation_multiseed.png`.
+- **Dynamics-level validation (beyond the mean).** Power spectra of meso vs
+  sparse micro agree to a log-RMS of **0.15–0.21** (≈ factor 1.4) across all
+  populations (20 trials), reproducing the characteristic ~80–200 Hz
+  fluctuation peak; micro ISI-CV is **0.85–0.94**, confirming the balanced
+  asynchronous-irregular state. So meso reproduces the temporal structure, not
+  just the mean rate. Figure: `dynamics_psd.png`; data:
+  `results/validation_dynamics_latest.json`.
+- *Caveats:* Julia ran at T=2 s; only sim time (not setup or energy) is
+  measured; the L4i systematic offset is unresolved (parameter calibration?).
 Figures: `cross_backend.png`, `speedup_vs_sparse_micro.png`, `language_comparison.png`;
 data: `results/cross_backend_summary.json`.
 
