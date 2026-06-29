@@ -38,7 +38,9 @@ def load_all():
     best = {}
     files = sorted(RESULTS.glob("benchmark_*.json"))  # timestamp-sorted
     for p in files:
-        if p.name.endswith("_latest.json"):
+        # skip *_latest duplicates, EXCEPT the Julia backend which only writes
+        # benchmark_julia_latest.json (no timestamped file)
+        if p.name.endswith("_latest.json") and "julia" not in p.name:
             continue
         try:
             data = json.loads(p.read_text())

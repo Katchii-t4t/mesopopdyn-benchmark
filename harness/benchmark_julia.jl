@@ -71,7 +71,10 @@ end
 function main()
     matfile = joinpath(UPSTREAM, "params_PDmodel.mat")
     scalings = [0.1, 0.5, 1.0]
-    T = 10.0; dt = 1e-4; dt_rec = 1e-3; repeats = 3
+    # T kept short + 1 repeat: the upstream pure-Julia sim5.jl is unoptimised
+    # (heavy allocations / type instability), so it is far slower than the
+    # Numba/C/NEST backends. Cost-per-biosecond still compares fairly.
+    T = 2.0; dt = 1e-4; dt_rec = 1e-3; repeats = 1
 
     results = String[]
     println("=== mesopopdyn Julia benchmark ===")

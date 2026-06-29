@@ -98,25 +98,35 @@ law (−0.5). The small excess reflects mild network nonlinearity near threshold
 (Before the §4.4 coupling fix this slope was a contaminated −0.75.)
 Figure: `finite_size_scaling.png`; data: `results/finite_size_latest.json`.
 
-### 4.6 Cross-backend results (NEST 3.10, WSL/Linux)
-Three independent simulators of the same model were run and compared:
+### 4.6 Cross-backend results (four implementations)
+The same model was run across four independent implementations — Python/Numba,
+NEST 3.10 (`gif_pop_psc_exp`/`gif_psc_exp`), Schwalger's custom C library, and
+Julia — both mesoscopic and (for NEST/C) microscopic.
 
-| backend     | scaling | N      | wall (10 s bio) | rate err |
-|-------------|---------|--------|-----------------|----------|
-| meso_numba  | 1.0     | 77,169 | 7.08 s          | 0.059 Hz |
-| meso_nest   | 1.0     | 77,169 | 9.90 s          | 0.052 Hz |
-| micro_nest  | 0.1     | 7,717  | 51.8 s (2 s bio)| 0.239 Hz |
+Full-scale mesoscopic, 10 s bio (Julia at 2 s bio, see note):
 
-- **Cross-implementation agreement:** meso_numba and meso_nest match to
-  **0.008 Hz** at full scale — two independent implementations (custom Numba vs
-  NEST's C++ `gif_pop_psc_exp`) validate each other.
+| backend     | wall / bio-sec | rate err |
+|-------------|----------------|----------|
+| meso_numba  | 0.70 s         | 0.059 Hz |
+| meso_c      | 0.89 s         | 0.051 Hz |
+| meso_nest   | 0.99 s         | 0.052 Hz |
+| meso_julia  | ~52 s          | 0.072 Hz |
+
+- **Cross-implementation agreement:** all four meso backends reproduce the
+  published rates; meso_numba and meso_nest match each other to **0.008 Hz** at
+  full scale — independent implementations validating each other.
+- **Implementation quality dominates:** Numba/C/NEST cluster around ~1 s per
+  bio-second; the *unoptimised* upstream Julia code is **~50–110× slower**
+  (≈2×10¹⁰ allocations from type instability) despite identical physics. Same
+  algorithm, very different cost — a benchmarking lesson in its own right.
 - **Micro→meso speedup grows with N** (meso flat, micro ~N² for all-to-all):
-  **12×** at scaling 0.05 (N=3,858) → **37×** at 0.10 (7,717) → **69×** at 0.15
-  (11,575). The speedup roughly doubles per step, extrapolating cleanly toward
-  the ~150× of Schwalger et al. (2017) at full scale.
-- *Caveat:* micro used all-to-all (mean-field) connectivity and only scaling
-  0.1; the speedup figure is not directly comparable to the paper's sparse
-  full-scale value, but the trend is unambiguous.
+  vs the NEST micro baseline, **12× → 37× → 69×** at scalings 0.05/0.10/0.15,
+  extrapolating toward the ~150× of Schwalger et al. (2017) at full scale. The
+  faster C micro baseline gives a smaller but likewise-growing 2×→11× over the
+  same range.
+- *Caveats:* micro used all-to-all (mean-field) connectivity at reduced scale;
+  Julia ran at T=2 s (it is too slow at T=10 s), but cost-per-bio-second
+  normalises for that.
 Figure: `cross_backend.png`; data: `results/cross_backend_summary.json`.
 
 ## 5. Engineering findings (vs upstream)
