@@ -1,0 +1,33 @@
+{
+  "python.defaultInterpreterPath": "C:/Users/Karthik/anaconda3/python.exe",
+  "python.terminal.activateEnvironment": true,
+
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestArgs": ["harness"],
+
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoImportCompletions": true,
+
+  "editor.formatOnSave": true,
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "ruff.lineLength": 88,
+
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.pyc": true,
+    "**/.pytest_cache": true
+  },
+  "search.exclude": {
+    "upstream_reference/**": true,
+    "results/*.log": true
+  },
+
+  "terminal.integrated.cwd": "${workspaceFolder}/harness",
+  "files.associations": { "*.sh": "shellscript" }
+}

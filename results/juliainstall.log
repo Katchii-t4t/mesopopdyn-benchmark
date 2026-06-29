@@ -1,0 +1,3329 @@
+Retrieving notices: - \ | / done
+Channels:
+ - conda-forge
+Platform: linux-64
+Collecting package metadata (repodata.json): \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / done
+Solving environment: \ | / - \ done
+
+## Package Plan ##
+
+  environment location: /root/miniforge3/envs/nest
+
+  added / updated specs:
+    - julia
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    _x86_64-microarch-level-4  |      3_x86_64_v4          10 KB  conda-forge
+    arpack-3.9.1               |nompi_hf03ea27_102         127 KB  conda-forge
+    curl-8.21.0                |       hcf29cc6_0         190 KB  conda-forge
+    git-2.54.0                 | pl5321h6d3cee1_1        11.0 MB  conda-forge
+    gmp-6.3.0                  |       hac33072_2         449 KB  conda-forge
+    julia-1.12.5               |       h1382a85_0       165.2 MB  conda-forge
+    libamd-3.3.3               | haaf9dc3_7100102          49 KB  conda-forge
+    libbtf-2.3.2               | h32481e8_7100102          27 KB  conda-forge
+    libcamd-3.3.3              | h32481e8_7100102          46 KB  conda-forge
+    libccolamd-3.3.4           | h32481e8_7100102          42 KB  conda-forge
+    libcholmod-5.3.1           | h59ddab4_7100102         1.1 MB  conda-forge
+    libcolamd-3.3.4            | h32481e8_7100102          33 KB  conda-forge
+    libcxsparse-4.4.1          | h32481e8_7100102         118 KB  conda-forge
+    libgit2-1.9.4              |       hc20babb_0        1014 KB  conda-forge
+    libklu-2.3.5               | hf24d653_7100102         142 KB  conda-forge
+    libldl-3.3.2               | h32481e8_7100102          24 KB  conda-forge
+    libopenblas-ilp64-0.3.33   |pthreads_h3e26593_0         5.5 MB  conda-forge
+    libopenlibm4-0.8.1         |       hd590300_1         102 KB  conda-forge
+    libparu-1.0.0              | h17147ab_7100102          91 KB  conda-forge
+    librbio-4.3.4              | h32481e8_7100102          47 KB  conda-forge
+    libspex-3.2.3              | had10066_7100102          79 KB  conda-forge
+    libspqr-4.3.4              | h852d39f_7100102         213 KB  conda-forge
+    libsuitesparseconfig-7.10.1| h92d6892_7100102          42 KB  conda-forge
+    libumfpack-6.3.5           | heb53515_7100102         424 KB  conda-forge
+    libunwind-1.6.2            |       h9c3ff4c_0          74 KB  conda-forge
+    libutf8proc-2.11.3         |       hfe17d71_0          84 KB  conda-forge
+    metis-5.1.0                |    hd0bcaf9_1007         3.7 MB  conda-forge
+    mpfr-4.2.2                 |       he0a73b1_0         713 KB  conda-forge
+    openblas-ilp64-0.3.33      |pthreads_h3d04fff_0         5.7 MB  conda-forge
+    openlibm-0.8.1             |       hd590300_1          29 KB  conda-forge
+    p7zip-16.02                |    h9c3ff4c_1001         2.2 MB  conda-forge
+    perl-5.32.1                | 7_hd590300_perl5        12.7 MB  conda-forge
+    suitesparse-7.10.1         | ha0f6916_7100102          12 KB  conda-forge
+    zlib-1.3.2                 |       h25fd6f3_2          94 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:       211.3 MB
+
+The following NEW packages will be INSTALLED:
+
+  _x86_64-microarch~ conda-forge/noarch::_x86_64-microarch-level-4-3_x86_64_v4 
+  arpack             conda-forge/linux-64::arpack-3.9.1-nompi_hf03ea27_102 
+  curl               conda-forge/linux-64::curl-8.21.0-hcf29cc6_0 
+  git                conda-forge/linux-64::git-2.54.0-pl5321h6d3cee1_1 
+  gmp                conda-forge/linux-64::gmp-6.3.0-hac33072_2 
+  julia              conda-forge/linux-64::julia-1.12.5-h1382a85_0 
+  libamd             conda-forge/linux-64::libamd-3.3.3-haaf9dc3_7100102 
+  libbtf             conda-forge/linux-64::libbtf-2.3.2-h32481e8_7100102 
+  libcamd            conda-forge/linux-64::libcamd-3.3.3-h32481e8_7100102 
+  libccolamd         conda-forge/linux-64::libccolamd-3.3.4-h32481e8_7100102 
+  libcholmod         conda-forge/linux-64::libcholmod-5.3.1-h59ddab4_7100102 
+  libcolamd          conda-forge/linux-64::libcolamd-3.3.4-h32481e8_7100102 
+  libcxsparse        conda-forge/linux-64::libcxsparse-4.4.1-h32481e8_7100102 
+  libgit2            conda-forge/linux-64::libgit2-1.9.4-hc20babb_0 
+  libklu             conda-forge/linux-64::libklu-2.3.5-hf24d653_7100102 
+  libldl             conda-forge/linux-64::libldl-3.3.2-h32481e8_7100102 
+  libopenblas-ilp64  conda-forge/linux-64::libopenblas-ilp64-0.3.33-pthreads_h3e26593_0 
+  libopenlibm4       conda-forge/linux-64::libopenlibm4-0.8.1-hd590300_1 
+  libparu            conda-forge/linux-64::libparu-1.0.0-h17147ab_7100102 
+  librbio            conda-forge/linux-64::librbio-4.3.4-h32481e8_7100102 
+  libspex            conda-forge/linux-64::libspex-3.2.3-had10066_7100102 
+  libspqr            conda-forge/linux-64::libspqr-4.3.4-h852d39f_7100102 
+  libsuitesparsecon~ conda-forge/linux-64::libsuitesparseconfig-7.10.1-h92d6892_7100102 
+  libumfpack         conda-forge/linux-64::libumfpack-6.3.5-heb53515_7100102 
+  libunwind          conda-forge/linux-64::libunwind-1.6.2-h9c3ff4c_0 
+  libutf8proc        conda-forge/linux-64::libutf8proc-2.11.3-hfe17d71_0 
+  metis              conda-forge/linux-64::metis-5.1.0-hd0bcaf9_1007 
+  mpfr               conda-forge/linux-64::mpfr-4.2.2-he0a73b1_0 
+  openblas-ilp64     conda-forge/linux-64::openblas-ilp64-0.3.33-pthreads_h3d04fff_0 
+  openlibm           conda-forge/linux-64::openlibm-0.8.1-hd590300_1 
+  p7zip              conda-forge/linux-64::p7zip-16.02-h9c3ff4c_1001 
+  perl               conda-forge/linux-64::perl-5.32.1-7_hd590300_perl5 
+  suitesparse        conda-forge/linux-64::suitesparse-7.10.1-ha0f6916_7100102 
+  zlib               conda-forge/linux-64::zlib-1.3.2-h25fd6f3_2 
+
+
+
+Downloading and Extracting Packages: ...working...julia-1.12.5         | 165.2 MB  |            |   0% 
+perl-5.32.1          | 12.7 MB   |            |   0% [A
+
+git-2.54.0           | 11.0 MB   |            |   0% [A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    |            |   0% [A[A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    |            |   0% [A[A[A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    |            |   0% [A[A[A[A[A
+
+
+
+
+
+p7zip-16.02          | 2.2 MB    |            |   0% [A[A[A[A[A[A
+
+
+
+
+
+
+libcholmod-5.3.1     | 1.1 MB    |            |   0% [A[A[A[A[A[A[A
+
+
+
+
+
+
+
+libgit2-1.9.4        | 1014 KB   |            |   0% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+mpfr-4.2.2           | 713 KB    |            |   0% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+gmp-6.3.0            | 449 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+libumfpack-6.3.5     | 424 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+libspqr-4.3.4        | 213 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+curl-8.21.0          | 190 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+libklu-2.3.5         | 142 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+arpack-3.9.1         | 127 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libcxsparse-4.4.1    | 118 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libopenlibm4-0.8.1   | 102 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+zlib-1.3.2           | 94 KB     |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[Ajulia-1.12.5         | 165.2 MB  |            |   0% 
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    |            |   0% [A[A[A[A
+
+git-2.54.0           | 11.0 MB   |            |   0% [A[A
+perl-5.32.1          | 12.7 MB   |            |   0% [A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | 1          |   1% [A[A[A[A
+
+git-2.54.0           | 11.0 MB   | 1          |   1% [A[A
+perl-5.32.1          | 12.7 MB   |            |   1% [A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | 3          |   4% [A[A[A[A
+perl-5.32.1          | 12.7 MB   | 1          |   2% [A
+
+git-2.54.0           | 11.0 MB   | 2          |   2% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | 5          |   5% [A[A[A[A
+perl-5.32.1          | 12.7 MB   | 2          |   3% [Ajulia-1.12.5         | 165.2 MB  |            |   0% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    |            |   0% [A[A[A
+
+git-2.54.0           | 11.0 MB   | 4          |   4% [A[A
+perl-5.32.1          | 12.7 MB   | 3          |   3% [Ajulia-1.12.5         | 165.2 MB  |            |   0% 
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | 6          |   7% [A[A[A[A
+
+git-2.54.0           | 11.0 MB   | 5          |   5% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | 8          |   8% [A[A[A[Ajulia-1.12.5         | 165.2 MB  |            |   0% 
+perl-5.32.1          | 12.7 MB   | 4          |   4% [A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #          |  10% [A[A[A[A
+
+git-2.54.0           | 11.0 MB   | 6          |   6% [A[A
+perl-5.32.1          | 12.7 MB   | 4          |   5% [Ajulia-1.12.5         | 165.2 MB  |            |   0% 
+
+git-2.54.0           | 11.0 MB   | 6          |   7% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #1         |  12% [A[A[A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #2         |  13% [A[A[A[A
+perl-5.32.1          | 12.7 MB   | 5          |   5% [Ajulia-1.12.5         | 165.2 MB  |            |   0% 
+
+git-2.54.0           | 11.0 MB   | 7          |   8% [A[A
+perl-5.32.1          | 12.7 MB   | 6          |   7% [A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | 1          |   1% [A[A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #4         |  15% [A[A[A[A
+
+git-2.54.0           | 11.0 MB   | 8          |   9% [A[Ajulia-1.12.5         | 165.2 MB  |            |   0% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | 1          |   2% [A[A[A
+perl-5.32.1          | 12.7 MB   | 7          |   7% [A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #6         |  17% [A[A[A[A
+
+git-2.54.0           | 11.0 MB   | #          |  10% [A[Ajulia-1.12.5         | 165.2 MB  |            |   0% 
+perl-5.32.1          | 12.7 MB   | 8          |   8% [A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #8         |  18% [A[A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | 2          |   2% [A[A[A
+
+git-2.54.0           | 11.0 MB   | #          |  11% [A[Ajulia-1.12.5         | 165.2 MB  |            |   0% 
+
+git-2.54.0           | 11.0 MB   | #1         |  12% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #9         |  19% [A[A[A[A
+perl-5.32.1          | 12.7 MB   | 8          |   9% [Ajulia-1.12.5         | 165.2 MB  |            |   0% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | 2          |   2% [A[A[A
+
+git-2.54.0           | 11.0 MB   | #2         |  13% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ##         |  20% [A[A[A[A
+perl-5.32.1          | 12.7 MB   | 9          |   9% [A
+
+git-2.54.0           | 11.0 MB   | #3         |  13% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ##1        |  21% [A[A[A[A
+perl-5.32.1          | 12.7 MB   | 9          |  10% [A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | 3          |   4% [A[A[A
+
+git-2.54.0           | 11.0 MB   | #3         |  14% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ##2        |  23% [A[A[A[A
+perl-5.32.1          | 12.7 MB   | #          |  10% [Ajulia-1.12.5         | 165.2 MB  |            |   0% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | 4          |   5% [A[A[A
+
+git-2.54.0           | 11.0 MB   | #4         |  15% [A[Ajulia-1.12.5         | 165.2 MB  |            |   1% 
+perl-5.32.1          | 12.7 MB   | #          |  11% [A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ##3        |  24% [A[A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | 5          |   5% [A[A[A
+perl-5.32.1          | 12.7 MB   | #1         |  11% [A
+
+git-2.54.0           | 11.0 MB   | #5         |  16% [A[Ajulia-1.12.5         | 165.2 MB  |            |   1% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | 6          |   6% [A[A[A
+perl-5.32.1          | 12.7 MB   | #2         |  12% [A
+
+git-2.54.0           | 11.0 MB   | #6         |  16% [A[Ajulia-1.12.5         | 165.2 MB  |            |   1% 
+
+git-2.54.0           | 11.0 MB   | #6         |  17% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ##5        |  25% [A[A[A[A
+perl-5.32.1          | 12.7 MB   | #2         |  13% [A
+
+git-2.54.0           | 11.0 MB   | #7         |  17% [A[Ajulia-1.12.5         | 165.2 MB  |            |   1% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | 6          |   7% [A[A[A
+perl-5.32.1          | 12.7 MB   | #3         |  13% [A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | 7          |   7% [A[A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ##6        |  27% [A[A[A[Ajulia-1.12.5         | 165.2 MB  |            |   1% 
+perl-5.32.1          | 12.7 MB   | #3         |  14% [A
+
+git-2.54.0           | 11.0 MB   | #7         |  18% [A[Ajulia-1.12.5         | 165.2 MB  |            |   1% 
+perl-5.32.1          | 12.7 MB   | #3         |  14% [A
+
+git-2.54.0           | 11.0 MB   | #9         |  19% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ##8        |  29% [A[A[A[A
+perl-5.32.1          | 12.7 MB   | #4         |  14% [A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | 8          |   8% [A[A[A
+
+git-2.54.0           | 11.0 MB   | #9         |  20% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ##9        |  30% [A[A[A[A
+perl-5.32.1          | 12.7 MB   | #5         |  15% [Ajulia-1.12.5         | 165.2 MB  |            |   1% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | 8          |   9% [A[A[A
+
+git-2.54.0           | 11.0 MB   | ##         |  21% [A[A
+perl-5.32.1          | 12.7 MB   | #5         |  16% [A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ###        |  31% [A[A[A[Ajulia-1.12.5         | 165.2 MB  |            |   1% 
+perl-5.32.1          | 12.7 MB   | #6         |  16% [A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | 9          |   9% [A[A[A
+
+git-2.54.0           | 11.0 MB   | ##2        |  22% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ###1       |  32% [A[A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #          |  10% [A[A[A
+perl-5.32.1          | 12.7 MB   | #6         |  17% [A
+
+git-2.54.0           | 11.0 MB   | ##2        |  23% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ###2       |  32% [A[A[A[Ajulia-1.12.5         | 165.2 MB  |            |   1% 
+
+git-2.54.0           | 11.0 MB   | ##4        |  25% [A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #          |  11% [A[A[A
+perl-5.32.1          | 12.7 MB   | #7         |  18% [A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ###4       |  35% [A[A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #1         |  11% [A[A[Ajulia-1.12.5         | 165.2 MB  |            |   1% 
+perl-5.32.1          | 12.7 MB   | #8         |  18% [A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ###5       |  36% [A[A[A[A
+
+git-2.54.0           | 11.0 MB   | ##5        |  26% [A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #1         |  12% [A[A[A
+perl-5.32.1          | 12.7 MB   | #8         |  19% [A
+
+git-2.54.0           | 11.0 MB   | ##6        |  27% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ###6       |  37% [A[A[A[Ajulia-1.12.5         | 165.2 MB  |            |   1% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #2         |  12% [A[A[A
+perl-5.32.1          | 12.7 MB   | #9         |  19% [A
+
+git-2.54.0           | 11.0 MB   | ##7        |  28% [A[Ajulia-1.12.5         | 165.2 MB  |            |   1% 
+perl-5.32.1          | 12.7 MB   | #9         |  20% [Ajulia-1.12.5         | 165.2 MB  | 1          |   1% 
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ###7       |  37% [A[A[A[A
+
+git-2.54.0           | 11.0 MB   | ##8        |  28% [A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #2         |  13% [A[A[A
+perl-5.32.1          | 12.7 MB   | ##         |  20% [Ajulia-1.12.5         | 165.2 MB  | 1          |   1% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #3         |  13% [A[A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ###8       |  38% [A[A[A[A
+perl-5.32.1          | 12.7 MB   | ##         |  20% [A
+
+git-2.54.0           | 11.0 MB   | ##9        |  29% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ###8       |  39% [A[A[A[Ajulia-1.12.5         | 165.2 MB  | 1          |   1% 
+perl-5.32.1          | 12.7 MB   | ##         |  21% [A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #3         |  14% [A[A[A
+
+git-2.54.0           | 11.0 MB   | ##9        |  30% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ###9       |  39% [A[A[A[Ajulia-1.12.5         | 165.2 MB  | 1          |   1% 
+
+git-2.54.0           | 11.0 MB   | ###        |  30% [A[A
+perl-5.32.1          | 12.7 MB   | ##1        |  21% [A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ####       |  41% [A[A[A[Ajulia-1.12.5         | 165.2 MB  | 1          |   1% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #4         |  14% [A[A[A
+perl-5.32.1          | 12.7 MB   | ##1        |  21% [A
+
+git-2.54.0           | 11.0 MB   | ###1       |  31% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ####1      |  41% [A[A[A[Ajulia-1.12.5         | 165.2 MB  | 1          |   1% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #5         |  15% [A[A[A
+
+git-2.54.0           | 11.0 MB   | ###1       |  32% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ####2      |  43% [A[A[A[A
+perl-5.32.1          | 12.7 MB   | ##1        |  22% [Ajulia-1.12.5         | 165.2 MB  | 1          |   1% 
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ####3      |  43% [A[A[A[Ajulia-1.12.5         | 165.2 MB  | 1          |   1% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #5         |  16% [A[A[A
+
+git-2.54.0           | 11.0 MB   | ###2       |  33% [A[A
+perl-5.32.1          | 12.7 MB   | ##2        |  22% [A
+perl-5.32.1          | 12.7 MB   | ##2        |  23% [A
+
+git-2.54.0           | 11.0 MB   | ###3       |  33% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ####4      |  44% [A[A[A[Ajulia-1.12.5         | 165.2 MB  | 1          |   1% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #6         |  16% [A[A[A
+perl-5.32.1          | 12.7 MB   | ##3        |  23% [A
+
+git-2.54.0           | 11.0 MB   | ###4       |  34% [A[Ajulia-1.12.5         | 165.2 MB  | 1          |   1% 
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ####5      |  45% [A[A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #6         |  17% [A[A[A
+
+git-2.54.0           | 11.0 MB   | ###4       |  35% [A[A
+perl-5.32.1          | 12.7 MB   | ##3        |  23% [Ajulia-1.12.5         | 165.2 MB  | 1          |   1% 
+
+git-2.54.0           | 11.0 MB   | ###5       |  35% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ####5      |  46% [A[A[A[A
+perl-5.32.1          | 12.7 MB   | ##3        |  24% [Ajulia-1.12.5         | 165.2 MB  | 1          |   1% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #7         |  17% [A[A[A
+
+git-2.54.0           | 11.0 MB   | ###6       |  36% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ####7      |  47% [A[A[A[A
+perl-5.32.1          | 12.7 MB   | ##4        |  24% [Ajulia-1.12.5         | 165.2 MB  | 1          |   1% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #7         |  18% [A[A[A
+perl-5.32.1          | 12.7 MB   | ##4        |  25% [A
+
+git-2.54.0           | 11.0 MB   | ###7       |  37% [A[Ajulia-1.12.5         | 165.2 MB  | 1          |   1% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #8         |  18% [A[A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ####7      |  48% [A[A[A[Ajulia-1.12.5         | 165.2 MB  | 1          |   2% 
+
+git-2.54.0           | 11.0 MB   | ###8       |  38% [A[A
+perl-5.32.1          | 12.7 MB   | ##4        |  25% [A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ####9      |  49% [A[A[A[A
+
+git-2.54.0           | 11.0 MB   | ###9       |  40% [A[Ajulia-1.12.5         | 165.2 MB  | 1          |   2% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #9         |  19% [A[A[A
+perl-5.32.1          | 12.7 MB   | ##5        |  25% [A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #####      |  50% [A[A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #9         |  20% [A[A[Ajulia-1.12.5         | 165.2 MB  | 1          |   2% 
+perl-5.32.1          | 12.7 MB   | ##5        |  26% [A
+
+git-2.54.0           | 11.0 MB   | ####       |  41% [A[A
+perl-5.32.1          | 12.7 MB   | ##6        |  26% [A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #####1     |  51% [A[A[A[A
+
+git-2.54.0           | 11.0 MB   | ####1      |  41% [A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ##         |  20% [A[A[Ajulia-1.12.5         | 165.2 MB  | 1          |   2% 
+perl-5.32.1          | 12.7 MB   | ##6        |  27% [A
+
+git-2.54.0           | 11.0 MB   | ####2      |  42% [A[Ajulia-1.12.5         | 165.2 MB  | 1          |   2% 
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #####2     |  52% [A[A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ##         |  21% [A[A[A
+
+git-2.54.0           | 11.0 MB   | ####3      |  43% [A[Ajulia-1.12.5         | 165.2 MB  | 1          |   2% 
+perl-5.32.1          | 12.7 MB   | ##7        |  27% [A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #####3     |  53% [A[A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ##1        |  21% [A[A[A
+
+git-2.54.0           | 11.0 MB   | ####3      |  44% [A[Ajulia-1.12.5         | 165.2 MB  | 1          |   2% 
+perl-5.32.1          | 12.7 MB   | ##7        |  28% [A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #####4     |  54% [A[A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ##1        |  22% [A[A[Ajulia-1.12.5         | 165.2 MB  | 1          |   2% 
+
+git-2.54.0           | 11.0 MB   | ####4      |  45% [A[A
+perl-5.32.1          | 12.7 MB   | ##8        |  28% [A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ##2        |  22% [A[A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #####4     |  55% [A[A[A[A
+
+git-2.54.0           | 11.0 MB   | ####5      |  45% [A[A
+perl-5.32.1          | 12.7 MB   | ##8        |  28% [Ajulia-1.12.5         | 165.2 MB  | 1          |   2% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ##2        |  23% [A[A[A
+perl-5.32.1          | 12.7 MB   | ##8        |  29% [A
+
+git-2.54.0           | 11.0 MB   | ####6      |  46% [A[Ajulia-1.12.5         | 165.2 MB  | 1          |   2% 
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #####6     |  56% [A[A[A[A
+
+git-2.54.0           | 11.0 MB   | ####6      |  47% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #####6     |  57% [A[A[A[A
+perl-5.32.1          | 12.7 MB   | ##9        |  29% [Ajulia-1.12.5         | 165.2 MB  | 1          |   2% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ##3        |  23% [A[A[A
+
+git-2.54.0           | 11.0 MB   | ####7      |  48% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #####7     |  57% [A[A[A[A
+perl-5.32.1          | 12.7 MB   | ##9        |  30% [Ajulia-1.12.5         | 165.2 MB  | 1          |   2% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ##4        |  24% [A[A[A
+perl-5.32.1          | 12.7 MB   | ###        |  30% [A
+
+git-2.54.0           | 11.0 MB   | ####8      |  49% [A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ##4        |  25% [A[A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #####8     |  59% [A[A[A[A
+
+git-2.54.0           | 11.0 MB   | ####9      |  50% [A[A
+perl-5.32.1          | 12.7 MB   | ###        |  31% [Ajulia-1.12.5         | 165.2 MB  | 1          |   2% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ##5        |  26% [A[A[A
+
+git-2.54.0           | 11.0 MB   | #####      |  50% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ######     |  60% [A[A[A[Ajulia-1.12.5         | 165.2 MB  | 2          |   2% 
+perl-5.32.1          | 12.7 MB   | ###1       |  31% [A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ##6        |  26% [A[A[A
+
+git-2.54.0           | 11.0 MB   | #####      |  51% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ######1    |  61% [A[A[A[Ajulia-1.12.5         | 165.2 MB  | 2          |   2% 
+perl-5.32.1          | 12.7 MB   | ###1       |  32% [A
+
+git-2.54.0           | 11.0 MB   | #####1     |  52% [A[Ajulia-1.12.5         | 165.2 MB  | 2          |   2% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ##6        |  27% [A[A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ######2    |  62% [A[A[A[A
+perl-5.32.1          | 12.7 MB   | ###2       |  32% [A
+perl-5.32.1          | 12.7 MB   | ###2       |  33% [A
+
+git-2.54.0           | 11.0 MB   | #####2     |  53% [A[Ajulia-1.12.5         | 165.2 MB  | 2          |   2% 
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ######2    |  63% [A[A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ##7        |  28% [A[A[A
+perl-5.32.1          | 12.7 MB   | ###2       |  33% [A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ######3    |  64% [A[A[A[A
+
+git-2.54.0           | 11.0 MB   | #####3     |  53% [A[A
+perl-5.32.1          | 12.7 MB   | ###3       |  33% [A
+
+git-2.54.0           | 11.0 MB   | #####3     |  54% [A[Ajulia-1.12.5         | 165.2 MB  | 2          |   2% 
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ######4    |  65% [A[A[A[A
+perl-5.32.1          | 12.7 MB   | ###3       |  34% [Ajulia-1.12.5         | 165.2 MB  | 2          |   2% 
+
+git-2.54.0           | 11.0 MB   | #####4     |  55% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ######5    |  65% [A[A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ##8        |  28% [A[A[A
+perl-5.32.1          | 12.7 MB   | ###4       |  34% [A
+perl-5.32.1          | 12.7 MB   | ###4       |  35% [A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ######5    |  66% [A[A[A[A
+
+git-2.54.0           | 11.0 MB   | #####5     |  56% [A[Ajulia-1.12.5         | 165.2 MB  | 2          |   2% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ##9        |  30% [A[A[A
+perl-5.32.1          | 12.7 MB   | ###4       |  35% [A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ###        |  31% [A[A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ######7    |  67% [A[A[A[Ajulia-1.12.5         | 165.2 MB  | 2          |   2% 
+perl-5.32.1          | 12.7 MB   | ###5       |  35% [A
+
+git-2.54.0           | 11.0 MB   | #####6     |  57% [A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ###1       |  32% [A[A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ######8    |  69% [A[A[A[A
+perl-5.32.1          | 12.7 MB   | ###5       |  36% [Ajulia-1.12.5         | 165.2 MB  | 2          |   2% 
+
+git-2.54.0           | 11.0 MB   | #####8     |  58% [A[A
+perl-5.32.1          | 12.7 MB   | ###6       |  36% [A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ###2       |  32% [A[A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ######9    |  70% [A[A[A[Ajulia-1.12.5         | 165.2 MB  | 2          |   2% 
+perl-5.32.1          | 12.7 MB   | ###6       |  37% [A
+
+git-2.54.0           | 11.0 MB   | #####8     |  59% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #######    |  71% [A[A[A[Ajulia-1.12.5         | 165.2 MB  | 2          |   2% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ###2       |  33% [A[A[A
+
+git-2.54.0           | 11.0 MB   | #####9     |  60% [A[A
+perl-5.32.1          | 12.7 MB   | ###7       |  37% [A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #######1   |  72% [A[A[A[A
+perl-5.32.1          | 12.7 MB   | ###7       |  38% [A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ###3       |  34% [A[A[Ajulia-1.12.5         | 165.2 MB  | 2          |   2% 
+
+git-2.54.0           | 11.0 MB   | ######     |  60% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #######2   |  72% [A[A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ###4       |  34% [A[A[A
+perl-5.32.1          | 12.7 MB   | ###8       |  38% [A
+
+git-2.54.0           | 11.0 MB   | ######     |  61% [A[Ajulia-1.12.5         | 165.2 MB  | 2          |   3% 
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #######3   |  73% [A[A[A[A
+perl-5.32.1          | 12.7 MB   | ###8       |  39% [A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ###5       |  36% [A[A[A
+
+git-2.54.0           | 11.0 MB   | ######1    |  62% [A[Ajulia-1.12.5         | 165.2 MB  | 2          |   3% 
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #######4   |  74% [A[A[A[A
+perl-5.32.1          | 12.7 MB   | ###9       |  39% [A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ###6       |  36% [A[A[A
+
+git-2.54.0           | 11.0 MB   | ######2    |  62% [A[Ajulia-1.12.5         | 165.2 MB  | 2          |   3% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ###6       |  37% [A[A[A
+perl-5.32.1          | 12.7 MB   | ###9       |  40% [A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #######4   |  75% [A[A[A[A
+
+git-2.54.0           | 11.0 MB   | ######2    |  63% [A[Ajulia-1.12.5         | 165.2 MB  | 2          |   3% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ###7       |  37% [A[A[A
+perl-5.32.1          | 12.7 MB   | ####       |  40% [A
+
+git-2.54.0           | 11.0 MB   | ######3    |  63% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #######5   |  76% [A[A[A[Ajulia-1.12.5         | 165.2 MB  | 2          |   3% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ###7       |  38% [A[A[A
+
+git-2.54.0           | 11.0 MB   | ######3    |  64% [A[A
+perl-5.32.1          | 12.7 MB   | ####       |  41% [A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #######6   |  77% [A[A[A[A
+perl-5.32.1          | 12.7 MB   | ####1      |  41% [A
+
+git-2.54.0           | 11.0 MB   | ######4    |  64% [A[Ajulia-1.12.5         | 165.2 MB  | 2          |   3% 
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #######7   |  77% [A[A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ###8       |  39% [A[A[A
+
+git-2.54.0           | 11.0 MB   | ######4    |  65% [A[A
+perl-5.32.1          | 12.7 MB   | ####1      |  41% [Ajulia-1.12.5         | 165.2 MB  | 2          |   3% 
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #######7   |  78% [A[A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ###9       |  39% [A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ####       |  40% [A[A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #######8   |  79% [A[A[A[A
+perl-5.32.1          | 12.7 MB   | ####1      |  42% [A
+
+git-2.54.0           | 11.0 MB   | ######5    |  66% [A[Ajulia-1.12.5         | 165.2 MB  | 2          |   3% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ####1      |  41% [A[A[Ajulia-1.12.5         | 165.2 MB  | 2          |   3% 
+
+git-2.54.0           | 11.0 MB   | ######6    |  66% [A[A
+perl-5.32.1          | 12.7 MB   | ####2      |  42% [A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #######9   |  80% [A[A[A[A
+
+git-2.54.0           | 11.0 MB   | ######6    |  67% [A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ####1      |  42% [A[A[Ajulia-1.12.5         | 165.2 MB  | 2          |   3% 
+perl-5.32.1          | 12.7 MB   | ####2      |  43% [A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ########   |  81% [A[A[A[A
+
+git-2.54.0           | 11.0 MB   | ######7    |  67% [A[A
+perl-5.32.1          | 12.7 MB   | ####3      |  43% [Ajulia-1.12.5         | 165.2 MB  | 2          |   3% 
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ########1  |  81% [A[A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ####2      |  43% [A[A[A
+
+git-2.54.0           | 11.0 MB   | ######8    |  68% [A[A
+perl-5.32.1          | 12.7 MB   | ####3      |  43% [Ajulia-1.12.5         | 165.2 MB  | 2          |   3% 
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ########2  |  82% [A[A[A[A
+perl-5.32.1          | 12.7 MB   | ####3      |  44% [A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ####3      |  44% [A[A[A
+
+git-2.54.0           | 11.0 MB   | ######8    |  69% [A[Ajulia-1.12.5         | 165.2 MB  | 2          |   3% 
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ########3  |  83% [A[A[A[A
+perl-5.32.1          | 12.7 MB   | ####4      |  44% [A
+
+git-2.54.0           | 11.0 MB   | ######9    |  69% [A[A
+perl-5.32.1          | 12.7 MB   | ####4      |  45% [A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ####4      |  45% [A[A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ########4  |  84% [A[A[A[Ajulia-1.12.5         | 165.2 MB  | 2          |   3% 
+
+git-2.54.0           | 11.0 MB   | ######9    |  70% [A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ####5      |  46% [A[A[Ajulia-1.12.5         | 165.2 MB  | 2          |   3% 
+perl-5.32.1          | 12.7 MB   | ####4      |  45% [A
+
+git-2.54.0           | 11.0 MB   | #######    |  70% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ########5  |  85% [A[A[A[A
+perl-5.32.1          | 12.7 MB   | ####5      |  45% [Ajulia-1.12.5         | 165.2 MB  | 2          |   3% 
+
+git-2.54.0           | 11.0 MB   | #######    |  71% [A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ####6      |  47% [A[A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ########6  |  86% [A[A[A[A
+perl-5.32.1          | 12.7 MB   | ####5      |  46% [A
+
+git-2.54.0           | 11.0 MB   | #######1   |  71% [A[Ajulia-1.12.5         | 165.2 MB  | 2          |   3% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ####7      |  47% [A[A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ########7  |  88% [A[A[A[A
+
+git-2.54.0           | 11.0 MB   | #######2   |  72% [A[A
+perl-5.32.1          | 12.7 MB   | ####6      |  46% [Ajulia-1.12.5         | 165.2 MB  | 3          |   3% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ####8      |  48% [A[A[A
+
+git-2.54.0           | 11.0 MB   | #######2   |  72% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ########8  |  89% [A[A[A[A
+perl-5.32.1          | 12.7 MB   | ####6      |  47% [Ajulia-1.12.5         | 165.2 MB  | 3          |   3% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ####9      |  49% [A[A[A
+
+git-2.54.0           | 11.0 MB   | #######3   |  73% [A[A
+perl-5.32.1          | 12.7 MB   | ####7      |  47% [A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ########9  |  90% [A[A[A[A
+perl-5.32.1          | 12.7 MB   | ####7      |  48% [A
+
+git-2.54.0           | 11.0 MB   | #######3   |  74% [A[Ajulia-1.12.5         | 165.2 MB  | 3          |   3% 
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #########  |  90% [A[A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ####9      |  50% [A[A[A
+perl-5.32.1          | 12.7 MB   | ####7      |  48% [A
+
+git-2.54.0           | 11.0 MB   | #######4   |  74% [A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #####1     |  51% [A[A[Ajulia-1.12.5         | 165.2 MB  | 3          |   3% 
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #########1 |  91% [A[A[A[A
+
+git-2.54.0           | 11.0 MB   | #######5   |  75% [A[A
+perl-5.32.1          | 12.7 MB   | ####8      |  48% [A
+
+git-2.54.0           | 11.0 MB   | #######5   |  76% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #########2 |  92% [A[A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #####1     |  52% [A[A[A
+perl-5.32.1          | 12.7 MB   | ####8      |  49% [Ajulia-1.12.5         | 165.2 MB  | 3          |   3% 
+
+git-2.54.0           | 11.0 MB   | #######6   |  76% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #########3 |  94% [A[A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #####3     |  54% [A[A[A
+perl-5.32.1          | 12.7 MB   | ####9      |  49% [Ajulia-1.12.5         | 165.2 MB  | 3          |   3% 
+
+git-2.54.0           | 11.0 MB   | #######6   |  77% [A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #####4     |  54% [A[A[A
+perl-5.32.1          | 12.7 MB   | ####9      |  50% [A
+
+git-2.54.0           | 11.0 MB   | #######7   |  77% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #########4 |  95% [A[A[A[Ajulia-1.12.5         | 165.2 MB  | 3          |   3% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #####5     |  55% [A[A[A
+perl-5.32.1          | 12.7 MB   | #####      |  50% [A
+
+git-2.54.0           | 11.0 MB   | #######7   |  78% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #########5 |  96% [A[A[A[Ajulia-1.12.5         | 165.2 MB  | 3          |   3% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #####6     |  56% [A[A[A
+
+git-2.54.0           | 11.0 MB   | #######8   |  78% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #########6 |  97% [A[A[A[A
+perl-5.32.1          | 12.7 MB   | #####      |  51% [A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #####7     |  57% [A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #####8     |  59% [A[A[Ajulia-1.12.5         | 165.2 MB  | 3          |   3% 
+perl-5.32.1          | 12.7 MB   | #####1     |  51% [A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #########8 |  98% [A[A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #####9     |  60% [A[A[Ajulia-1.12.5         | 165.2 MB  | 3          |   3% 
+perl-5.32.1          | 12.7 MB   | #####1     |  52% [A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | #########9 | 100% [A[A[A[A
+
+git-2.54.0           | 11.0 MB   | #######8   |  79% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ########## | 100% [A[A[A[Ajulia-1.12.5         | 165.2 MB  | 3          |   3% 
+
+git-2.54.0           | 11.0 MB   | #######9   |  79% [A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ######     |  61% [A[A[A
+perl-5.32.1          | 12.7 MB   | #####2     |  52% [A
+perl-5.32.1          | 12.7 MB   | #####2     |  53% [A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ######2    |  62% [A[A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    |            |   0% [A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 3          |   3% 
+
+git-2.54.0           | 11.0 MB   | #######9   |  80% [A[A
+
+
+
+libopenblas-ilp64-0. | 5.5 MB    | ########## | 100% [A[A[A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | 2          |   2% [A[A[A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ######3    |  63% [A[A[A
+
+git-2.54.0           | 11.0 MB   | ########   |  80% [A[A
+perl-5.32.1          | 12.7 MB   | #####3     |  53% [Ajulia-1.12.5         | 165.2 MB  | 3          |   3% 
+perl-5.32.1          | 12.7 MB   | #####3     |  53% [A
+
+git-2.54.0           | 11.0 MB   | ########   |  81% [A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ######4    |  65% [A[A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | 3          |   4% [A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | #####3     |  54% [Ajulia-1.12.5         | 165.2 MB  | 3          |   3% 
+
+
+
+
+metis-5.1.0          | 3.7 MB    | 5          |   5% [A[A[A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ######5    |  66% [A[A[A
+perl-5.32.1          | 12.7 MB   | #####4     |  54% [A
+
+git-2.54.0           | 11.0 MB   | ########1  |  81% [A[Ajulia-1.12.5         | 165.2 MB  | 3          |   4% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ######6    |  67% [A[A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | 6          |   6% [A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | #####4     |  55% [A
+
+git-2.54.0           | 11.0 MB   | ########1  |  82% [A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | 7          |   8% [A[A[A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ######7    |  67% [A[A[Ajulia-1.12.5         | 165.2 MB  | 3          |   4% 
+perl-5.32.1          | 12.7 MB   | #####4     |  55% [A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | 9          |   9% [A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 3          |   4% 
+
+git-2.54.0           | 11.0 MB   | ########2  |  82% [A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ######8    |  69% [A[A[A
+perl-5.32.1          | 12.7 MB   | #####5     |  56% [Ajulia-1.12.5         | 165.2 MB  | 3          |   4% 
+
+
+
+
+metis-5.1.0          | 3.7 MB    | #2         |  13% [A[A[A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #######1   |  71% [A[A[A
+
+git-2.54.0           | 11.0 MB   | ########3  |  83% [A[A
+perl-5.32.1          | 12.7 MB   | #####6     |  56% [A
+
+git-2.54.0           | 11.0 MB   | ########4  |  84% [A[Ajulia-1.12.5         | 165.2 MB  | 3          |   4% 
+
+
+
+
+metis-5.1.0          | 3.7 MB    | #4         |  14% [A[A[A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #######2   |  72% [A[A[A
+
+git-2.54.0           | 11.0 MB   | ########4  |  85% [A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | #5         |  16% [A[A[A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #######3   |  73% [A[A[Ajulia-1.12.5         | 165.2 MB  | 3          |   4% 
+perl-5.32.1          | 12.7 MB   | #####6     |  57% [A
+perl-5.32.1          | 12.7 MB   | #####6     |  57% [A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | #7         |  18% [A[A[A[A[A
+
+git-2.54.0           | 11.0 MB   | ########5  |  85% [A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #######4   |  75% [A[A[Ajulia-1.12.5         | 165.2 MB  | 3          |   4% 
+perl-5.32.1          | 12.7 MB   | #####7     |  57% [A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | #9         |  19% [A[A[A[A[A
+
+git-2.54.0           | 11.0 MB   | ########5  |  86% [A[Ajulia-1.12.5         | 165.2 MB  | 3          |   4% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #######5   |  75% [A[A[A
+perl-5.32.1          | 12.7 MB   | #####7     |  58% [A
+
+git-2.54.0           | 11.0 MB   | ########6  |  86% [A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #######6   |  77% [A[A[Ajulia-1.12.5         | 165.2 MB  | 3          |   4% 
+perl-5.32.1          | 12.7 MB   | #####8     |  58% [A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ##         |  21% [A[A[A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #######8   |  78% [A[A[Ajulia-1.12.5         | 165.2 MB  | 3          |   4% 
+
+git-2.54.0           | 11.0 MB   | ########6  |  87% [A[A
+perl-5.32.1          | 12.7 MB   | #####8     |  58% [A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ##2        |  22% [A[A[A[A[A
+
+git-2.54.0           | 11.0 MB   | ########7  |  87% [A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #######9   |  79% [A[A[Ajulia-1.12.5         | 165.2 MB  | 3          |   4% 
+perl-5.32.1          | 12.7 MB   | #####8     |  59% [A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ##3        |  23% [A[A[A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ########   |  80% [A[A[Ajulia-1.12.5         | 165.2 MB  | 3          |   4% 
+
+git-2.54.0           | 11.0 MB   | ########7  |  88% [A[A
+perl-5.32.1          | 12.7 MB   | #####9     |  59% [A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ##4        |  25% [A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | #####9     |  60% [A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ########1  |  82% [A[A[Ajulia-1.12.5         | 165.2 MB  | 3          |   4% 
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ##6        |  26% [A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | ######     |  60% [A
+
+git-2.54.0           | 11.0 MB   | ########8  |  88% [A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ########3  |  84% [A[A[Ajulia-1.12.5         | 165.2 MB  | 3          |   4% 
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ##8        |  28% [A[A[A[A[A
+
+git-2.54.0           | 11.0 MB   | ########9  |  89% [A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ########4  |  85% [A[A[Ajulia-1.12.5         | 165.2 MB  | 3          |   4% 
+
+git-2.54.0           | 11.0 MB   | ########9  |  90% [A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ###        |  30% [A[A[A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ########5  |  86% [A[A[Ajulia-1.12.5         | 165.2 MB  | 4          |   4% 
+
+git-2.54.0           | 11.0 MB   | #########  |  90% [A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ###2       |  32% [A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | ######     |  60% [A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ########6  |  87% [A[A[Ajulia-1.12.5         | 165.2 MB  | 4          |   4% 
+
+git-2.54.0           | 11.0 MB   | #########  |  91% [A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ###3       |  34% [A[A[A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ########7  |  88% [A[A[A
+
+git-2.54.0           | 11.0 MB   | #########1 |  91% [A[A
+perl-5.32.1          | 12.7 MB   | ######     |  61% [Ajulia-1.12.5         | 165.2 MB  | 4          |   4% 
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ###5       |  35% [A[A[A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ########8  |  89% [A[A[A
+
+git-2.54.0           | 11.0 MB   | #########1 |  92% [A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ###7       |  37% [A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | ######1    |  61% [Ajulia-1.12.5         | 165.2 MB  | 4          |   4% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ########9  |  90% [A[A[A
+
+git-2.54.0           | 11.0 MB   | #########2 |  92% [A[Ajulia-1.12.5         | 165.2 MB  | 4          |   4% 
+perl-5.32.1          | 12.7 MB   | ######1    |  62% [A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ###8       |  39% [A[A[A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #########  |  91% [A[A[A
+
+git-2.54.0           | 11.0 MB   | #########2 |  93% [A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ####       |  40% [A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | ######2    |  62% [A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #########1 |  92% [A[A[Ajulia-1.12.5         | 165.2 MB  | 4          |   4% 
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ####1      |  42% [A[A[A[A[A
+
+git-2.54.0           | 11.0 MB   | #########3 |  93% [A[A
+perl-5.32.1          | 12.7 MB   | ######2    |  62% [Ajulia-1.12.5         | 165.2 MB  | 4          |   4% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #########2 |  93% [A[A[A
+
+git-2.54.0           | 11.0 MB   | #########3 |  94% [A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ####3      |  43% [A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | ######2    |  63% [Ajulia-1.12.5         | 165.2 MB  | 4          |   4% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #########4 |  95% [A[A[A
+
+git-2.54.0           | 11.0 MB   | #########4 |  94% [A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ####5      |  46% [A[A[A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #########5 |  95% [A[A[Ajulia-1.12.5         | 165.2 MB  | 4          |   4% 
+perl-5.32.1          | 12.7 MB   | ######3    |  63% [A
+
+git-2.54.0           | 11.0 MB   | #########4 |  95% [A[A
+perl-5.32.1          | 12.7 MB   | ######3    |  63% [A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ####7      |  47% [A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 4          |   4% 
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #########6 |  96% [A[A[Ajulia-1.12.5         | 165.2 MB  | 4          |   4% 
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ####8      |  48% [A[A[A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #########7 |  97% [A[A[A
+
+git-2.54.0           | 11.0 MB   | #########5 |  95% [A[A
+perl-5.32.1          | 12.7 MB   | ######3    |  64% [A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ####9      |  50% [A[A[A[A[A
+
+git-2.54.0           | 11.0 MB   | #########5 |  96% [A[Ajulia-1.12.5         | 165.2 MB  | 4          |   4% 
+perl-5.32.1          | 12.7 MB   | ######4    |  64% [A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | #####1     |  51% [A[A[A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #########7 |  98% [A[A[A
+
+git-2.54.0           | 11.0 MB   | #########6 |  96% [A[Ajulia-1.12.5         | 165.2 MB  | 4          |   4% 
+perl-5.32.1          | 12.7 MB   | ######4    |  65% [A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | #########9 |  99% [A[A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | #####3     |  54% [A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 4          |   4% 
+
+git-2.54.0           | 11.0 MB   | #########6 |  97% [A[A
+perl-5.32.1          | 12.7 MB   | ######4    |  65% [A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ########## | 100% [A[A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | #####5     |  56% [A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 4          |   4% 
+
+git-2.54.0           | 11.0 MB   | #########7 |  97% [A[A
+perl-5.32.1          | 12.7 MB   | ######5    |  65% [A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ########## | 100% [A[A[A
+
+
+openblas-ilp64-0.3.3 | 5.7 MB    | ########## | 100% [A[A[A
+perl-5.32.1          | 12.7 MB   | ######5    |  65% [A
+
+
+
+
+
+p7zip-16.02          | 2.2 MB    |            |   1% [A[A[A[A[A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | #####6     |  57% [A[A[A[A[A
+
+git-2.54.0           | 11.0 MB   | #########7 |  98% [A[Ajulia-1.12.5         | 165.2 MB  | 4          |   4% 
+perl-5.32.1          | 12.7 MB   | ######5    |  66% [A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | #####9     |  59% [A[A[A[A[A
+
+
+
+
+
+p7zip-16.02          | 2.2 MB    | 6          |   6% [A[A[A[A[A[A
+
+git-2.54.0           | 11.0 MB   | #########8 |  98% [A[Ajulia-1.12.5         | 165.2 MB  | 4          |   5% 
+perl-5.32.1          | 12.7 MB   | ######6    |  66% [A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ######     |  61% [A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 4          |   5% 
+
+git-2.54.0           | 11.0 MB   | #########8 |  99% [A[A
+
+
+
+
+
+p7zip-16.02          | 2.2 MB    | #2         |  12% [A[A[A[A[A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ######2    |  62% [A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | ######6    |  67% [Ajulia-1.12.5         | 165.2 MB  | 4          |   5% 
+perl-5.32.1          | 12.7 MB   | ######6    |  67% [A
+
+
+
+
+
+p7zip-16.02          | 2.2 MB    | #6         |  16% [A[A[A[A[A[A
+
+git-2.54.0           | 11.0 MB   | #########9 |  99% [A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ######4    |  64% [A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 4          |   5% 
+
+
+
+
+
+p7zip-16.02          | 2.2 MB    | #9         |  19% [A[A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | ######7    |  67% [A
+
+git-2.54.0           | 11.0 MB   | ########## | 100% [A[A
+
+git-2.54.0           | 11.0 MB   | ########## | 100% [A[Ajulia-1.12.5         | 165.2 MB  | 4          |   5% 
+
+
+
+
+
+p7zip-16.02          | 2.2 MB    | ##2        |  23% [A[A[A[A[A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ######5    |  66% [A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | ######7    |  67% [A
+
+
+
+
+
+
+libcholmod-5.3.1     | 1.1 MB    | 1          |   1% [A[A[A[A[A[A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ######7    |  67% [A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 4          |   5% 
+
+
+
+
+
+p7zip-16.02          | 2.2 MB    | ##6        |  26% [A[A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | ######7    |  68% [A
+
+
+
+
+
+
+libcholmod-5.3.1     | 1.1 MB    | 5          |   6% [A[A[A[A[A[A[A
+
+
+
+
+
+p7zip-16.02          | 2.2 MB    | ##9        |  30% [A[A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 4          |   5% 
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ######8    |  68% [A[A[A[A[A
+
+
+
+
+
+
+libcholmod-5.3.1     | 1.1 MB    | #          |  10% [A[A[A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | ######7    |  68% [A
+
+
+
+
+
+
+libcholmod-5.3.1     | 1.1 MB    | #4         |  15% [A[A[A[A[A[A[A
+
+
+
+
+
+p7zip-16.02          | 2.2 MB    | ###2       |  33% [A[A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 4          |   5% 
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ######9    |  70% [A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | ######8    |  68% [Ajulia-1.12.5         | 165.2 MB  | 4          |   5% 
+
+
+
+
+
+p7zip-16.02          | 2.2 MB    | ###5       |  36% [A[A[A[A[A[A
+
+
+
+
+
+
+libcholmod-5.3.1     | 1.1 MB    | #9         |  19% [A[A[A[A[A[A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | #######    |  71% [A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | ######8    |  68% [A
+
+
+
+
+
+p7zip-16.02          | 2.2 MB    | ####       |  41% [A[A[A[A[A[A
+
+
+
+
+
+
+libcholmod-5.3.1     | 1.1 MB    | ##5        |  25% [A[A[A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 4          |   5% 
+
+
+
+
+metis-5.1.0          | 3.7 MB    | #######1   |  72% [A[A[A[A[A
+
+
+
+
+
+p7zip-16.02          | 2.2 MB    | ####3      |  43% [A[A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | ######8    |  69% [Ajulia-1.12.5         | 165.2 MB  | 4          |   5% 
+
+
+
+
+
+
+libcholmod-5.3.1     | 1.1 MB    | ##9        |  30% [A[A[A[A[A[A[A
+
+git-2.54.0           | 11.0 MB   | ########## | 100% [A[A
+
+
+
+
+
+
+libcholmod-5.3.1     | 1.1 MB    | ###4       |  34% [A[A[A[A[A[A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | #######3   |  73% [A[A[A[A[A
+
+
+
+
+
+p7zip-16.02          | 2.2 MB    | ####6      |  46% [A[A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | ######8    |  69% [Ajulia-1.12.5         | 165.2 MB  | 4          |   5% 
+
+
+
+
+
+
+libcholmod-5.3.1     | 1.1 MB    | ###8       |  39% [A[A[A[A[A[A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | #######4   |  74% [A[A[A[A[A
+
+
+
+
+
+p7zip-16.02          | 2.2 MB    | ####9      |  49% [A[A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | ######9    |  69% [Ajulia-1.12.5         | 165.2 MB  | 5          |   5% 
+
+
+
+
+
+
+libcholmod-5.3.1     | 1.1 MB    | ####3      |  43% [A[A[A[A[A[A[A
+
+
+
+
+
+p7zip-16.02          | 2.2 MB    | #####1     |  52% [A[A[A[A[A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | #######5   |  75% [A[A[A[A[A
+
+
+
+
+
+
+libcholmod-5.3.1     | 1.1 MB    | ####7      |  48% [A[A[A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 5          |   5% 
+perl-5.32.1          | 12.7 MB   | ######9    |  69% [A
+
+
+
+
+
+p7zip-16.02          | 2.2 MB    | #####5     |  55% [A[A[A[A[A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | #######5   |  76% [A[A[A[A[A
+
+
+
+
+
+
+libcholmod-5.3.1     | 1.1 MB    | #####2     |  52% [A[A[A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 5          |   5% 
+
+
+
+
+
+p7zip-16.02          | 2.2 MB    | #####8     |  58% [A[A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | ######9    |  69% [A
+
+
+
+
+
+
+libcholmod-5.3.1     | 1.1 MB    | #####6     |  57% [A[A[A[A[A[A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | #######6   |  77% [A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 5          |   5% 
+
+
+
+
+
+p7zip-16.02          | 2.2 MB    | ######1    |  61% [A[A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | ######9    |  70% [A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | #######7   |  78% [A[A[A[A[A
+
+
+
+
+
+
+libcholmod-5.3.1     | 1.1 MB    | ######2    |  62% [A[A[A[A[A[A[A
+
+
+
+
+
+p7zip-16.02          | 2.2 MB    | ######4    |  65% [A[A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 5          |   5% 
+perl-5.32.1          | 12.7 MB   | ######9    |  70% [A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | #######8   |  79% [A[A[A[A[A
+
+
+
+
+
+
+libcholmod-5.3.1     | 1.1 MB    | ######6    |  67% [A[A[A[A[A[A[A
+
+
+
+
+
+p7zip-16.02          | 2.2 MB    | ######7    |  68% [A[A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 5          |   5% 
+
+
+
+
+
+
+libcholmod-5.3.1     | 1.1 MB    | #######1   |  71% [A[A[A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | #######    |  70% [A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | #######9   |  79% [A[A[A[A[A
+
+
+
+
+
+p7zip-16.02          | 2.2 MB    | #######2   |  73% [A[A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 5          |   5% 
+
+
+
+
+
+p7zip-16.02          | 2.2 MB    | #######5   |  75% [A[A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 5          |   5% 
+
+
+
+
+
+
+libcholmod-5.3.1     | 1.1 MB    | #######7   |  77% [A[A[A[A[A[A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ########   |  80% [A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | #######    |  70% [A
+
+
+
+
+
+p7zip-16.02          | 2.2 MB    | #######8   |  78% [A[A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 5          |   5% 
+
+
+
+
+
+
+libcholmod-5.3.1     | 1.1 MB    | ########4  |  85% [A[A[A[A[A[A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ########1  |  81% [A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | #######    |  71% [Ajulia-1.12.5         | 165.2 MB  | 5          |   5% 
+
+
+
+
+
+p7zip-16.02          | 2.2 MB    | ########3  |  83% [A[A[A[A[A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ########2  |  82% [A[A[A[A[A
+
+
+
+
+
+
+libcholmod-5.3.1     | 1.1 MB    | #########  |  91% [A[A[A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 5          |   5% 
+perl-5.32.1          | 12.7 MB   | #######    |  71% [A
+
+
+
+
+
+p7zip-16.02          | 2.2 MB    | ########6  |  87% [A[A[A[A[A[A
+
+
+
+
+
+
+libcholmod-5.3.1     | 1.1 MB    | #########5 |  95% [A[A[A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 5          |   5% 
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ########3  |  83% [A[A[A[A[A
+
+
+
+
+
+p7zip-16.02          | 2.2 MB    | ########9  |  90% [A[A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | #######1   |  71% [A
+
+
+
+
+
+
+libcholmod-5.3.1     | 1.1 MB    | ########## | 100% [A[A[A[A[A[A[A
+
+
+
+
+
+
+libcholmod-5.3.1     | 1.1 MB    | ########## | 100% [A[A[A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 5          |   6% 
+
+
+
+
+
+p7zip-16.02          | 2.2 MB    | #########4 |  95% [A[A[A[A[A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ########4  |  85% [A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | #######1   |  71% [Ajulia-1.12.5         | 165.2 MB  | 5          |   6% 
+
+
+
+
+
+
+
+libgit2-1.9.4        | 1014 KB   | 1          |   2% [A[A[A[A[A[A[A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ########5  |  86% [A[A[A[A[A
+
+
+
+
+
+p7zip-16.02          | 2.2 MB    | #########8 |  99% [A[A[A[A[A[A
+
+
+
+
+
+p7zip-16.02          | 2.2 MB    | ########## | 100% [A[A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | #######1   |  72% [A
+
+
+
+
+
+
+
+libgit2-1.9.4        | 1014 KB   | 7          |   8% [A[A[A[A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 5          |   6% 
+
+
+
+
+
+
+
+
+mpfr-4.2.2           | 713 KB    | 2          |   2% [A[A[A[A[A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | #######1   |  72% [A
+
+
+
+
+
+
+
+libgit2-1.9.4        | 1014 KB   | #2         |  13% [A[A[A[A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 5          |   6% 
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ########6  |  87% [A[A[A[A[A
+
+
+
+
+
+
+
+
+mpfr-4.2.2           | 713 KB    | #5         |  16% [A[A[A[A[A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 5          |   6% 
+
+
+
+
+
+
+
+libgit2-1.9.4        | 1014 KB   | #7         |  17% [A[A[A[A[A[A[A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ########8  |  88% [A[A[A[A[A
+
+
+
+
+
+
+
+
+mpfr-4.2.2           | 713 KB    | ##6        |  27% [A[A[A[A[A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | #######2   |  72% [Ajulia-1.12.5         | 165.2 MB  | 5          |   6% 
+
+
+
+
+
+
+
+libgit2-1.9.4        | 1014 KB   | ##3        |  24% [A[A[A[A[A[A[A[A
+
+
+
+
+
+p7zip-16.02          | 2.2 MB    | ########## | 100% [A[A[A[A[A[A
+
+
+
+
+
+
+
+
+mpfr-4.2.2           | 713 KB    | ####       |  40% [A[A[A[A[A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 5          |   6% 
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ########9  |  89% [A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | #######2   |  72% [A
+
+
+
+
+
+
+
+libgit2-1.9.4        | 1014 KB   | ##8        |  28% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+mpfr-4.2.2           | 713 KB    | #####1     |  52% [A[A[A[A[A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 5          |   6% 
+
+
+
+
+metis-5.1.0          | 3.7 MB    | #########  |  90% [A[A[A[A[A
+
+
+
+
+
+
+
+libgit2-1.9.4        | 1014 KB   | ###3       |  33% [A[A[A[A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | #######2   |  73% [A
+perl-5.32.1          | 12.7 MB   | #######2   |  73% [Ajulia-1.12.5         | 165.2 MB  | 5          |   6% 
+
+
+
+
+
+
+
+
+mpfr-4.2.2           | 713 KB    | ######7    |  67% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+libgit2-1.9.4        | 1014 KB   | ###7       |  38% [A[A[A[A[A[A[A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | #########1 |  91% [A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | #######3   |  73% [Ajulia-1.12.5         | 165.2 MB  | 5          |   6% 
+
+
+
+
+
+
+
+
+mpfr-4.2.2           | 713 KB    | #######8   |  79% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+libgit2-1.9.4        | 1014 KB   | ####4      |  44% [A[A[A[A[A[A[A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | #########2 |  93% [A[A[A[A[A
+
+
+
+
+
+
+
+
+mpfr-4.2.2           | 713 KB    | #########1 |  92% [A[A[A[A[A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 5          |   6% 
+
+
+
+
+
+
+
+libgit2-1.9.4        | 1014 KB   | ####8      |  49% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+mpfr-4.2.2           | 713 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | #######3   |  73% [A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | #########3 |  94% [A[A[A[A[A
+
+
+
+
+
+
+
+
+mpfr-4.2.2           | 713 KB    | ########## | 100% [A[A[A[A[A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 6          |   6% 
+
+
+
+
+
+
+
+
+
+gmp-6.3.0            | 449 KB    | 3          |   4% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+libgit2-1.9.4        | 1014 KB   | #####3     |  54% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+gmp-6.3.0            | 449 KB    | #4         |  14% [A[A[A[A[A[A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | #######3   |  74% [A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | #########4 |  94% [A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | #######3   |  74% [A
+
+
+
+
+
+
+
+libgit2-1.9.4        | 1014 KB   | #####8     |  58% [A[A[A[A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 6          |   6% 
+
+
+
+
+
+
+
+
+
+gmp-6.3.0            | 449 KB    | ##4        |  25% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | #########5 |  95% [A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 6          |   6% 
+
+
+
+
+
+
+
+libgit2-1.9.4        | 1014 KB   | ######6    |  66% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+gmp-6.3.0            | 449 KB    | ######     |  61% [A[A[A[A[A[A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | #######4   |  74% [A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | #########6 |  96% [A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 6          |   6% 
+
+
+
+
+
+
+
+libgit2-1.9.4        | 1014 KB   | #######1   |  71% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+gmp-6.3.0            | 449 KB    | #######8   |  78% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+gmp-6.3.0            | 449 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | #######4   |  75% [A
+
+
+
+
+
+
+
+
+
+gmp-6.3.0            | 449 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+gmp-6.3.0            | 449 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | #########7 |  97% [A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 6          |   6% 
+
+
+
+
+
+
+
+libgit2-1.9.4        | 1014 KB   | #######7   |  77% [A[A[A[A[A[A[A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | #########8 |  99% [A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | #######4   |  75% [A
+
+
+
+
+
+
+
+
+
+
+libumfpack-6.3.5     | 424 KB    | 3          |   4% [A[A[A[A[A[A[A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 6          |   6% 
+
+
+
+
+
+
+
+libgit2-1.9.4        | 1014 KB   | ########2  |  82% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+libumfpack-6.3.5     | 424 KB    | #1         |  11% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+libgit2-1.9.4        | 1014 KB   | ########6  |  87% [A[A[A[A[A[A[A[A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | #########9 |  99% [A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | #######5   |  75% [A
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ########## | 100% [A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 6          |   6% 
+perl-5.32.1          | 12.7 MB   | #######5   |  75% [Ajulia-1.12.5         | 165.2 MB  | 6          |   6% 
+
+
+
+
+metis-5.1.0          | 3.7 MB    | ########## | 100% [A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+libspqr-4.3.4        | 213 KB    | 7          |   8% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+libgit2-1.9.4        | 1014 KB   | #########3 |  93% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+libumfpack-6.3.5     | 424 KB    | ####5      |  45% [A[A[A[A[A[A[A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 6          |   6% 
+
+
+
+
+
+
+
+
+
+
+
+libspqr-4.3.4        | 213 KB    | #5         |  15% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+libgit2-1.9.4        | 1014 KB   | #########7 |  98% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+libgit2-1.9.4        | 1014 KB   | ########## | 100% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+libgit2-1.9.4        | 1014 KB   | ########## | 100% [A[A[A[A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | #######5   |  76% [A
+
+
+
+
+
+
+
+
+
+
+libumfpack-6.3.5     | 424 KB    | ######7    |  68% [A[A[A[A[A[A[A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 6          |   6% 
+
+
+
+
+
+
+
+
+
+
+
+libspqr-4.3.4        | 213 KB    | ###        |  30% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+libumfpack-6.3.5     | 424 KB    | #########  |  91% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+libspqr-4.3.4        | 213 KB    | ###7       |  38% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+curl-8.21.0          | 190 KB    | 8          |   8% [A[A[A[A[A[A[A[A[A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | #######5   |  76% [A
+
+
+
+
+
+
+
+
+
+
+
+libspqr-4.3.4        | 213 KB    | ######7    |  68% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+curl-8.21.0          | 190 KB    | ####2      |  42% [A[A[A[A[A[A[A[A[A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | #######6   |  76% [A
+
+
+
+
+
+
+
+
+
+
+
+
+curl-8.21.0          | 190 KB    | #######5   |  76% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+libspqr-4.3.4        | 213 KB    | ########2  |  83% [A[A[A[A[A[A[A[A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | #######6   |  76% [A
+
+
+
+
+
+
+
+
+
+
+
+libspqr-4.3.4        | 213 KB    | #########7 |  98% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+libspqr-4.3.4        | 213 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+libspqr-4.3.4        | 213 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+libklu-2.3.5         | 142 KB    | #1         |  11% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | #######6   |  77% [A
+perl-5.32.1          | 12.7 MB   | #######7   |  77% [A
+
+
+
+
+
+
+
+
+
+
+
+
+
+libklu-2.3.5         | 142 KB    | ###3       |  34% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+libklu-2.3.5         | 142 KB    | ######7    |  67% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | #######7   |  78% [A
+
+
+
+
+
+
+
+
+
+
+
+
+
+libklu-2.3.5         | 142 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+libklu-2.3.5         | 142 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 6          |   7% 
+
+
+
+
+
+
+
+
+
+
+
+
+
+libklu-2.3.5         | 142 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | #######8   |  78% [Ajulia-1.12.5         | 165.2 MB  | 6          |   7% 
+perl-5.32.1          | 12.7 MB   | #######8   |  79% [A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+arpack-3.9.1         | 127 KB    | #2         |  13% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 6          |   7% 
+perl-5.32.1          | 12.7 MB   | #######9   |  79% [Ajulia-1.12.5         | 165.2 MB  | 6          |   7% 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+arpack-3.9.1         | 127 KB    | ######2    |  63% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+arpack-3.9.1         | 127 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+arpack-3.9.1         | 127 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+arpack-3.9.1         | 127 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 6          |   7% 
+perl-5.32.1          | 12.7 MB   | #######9   |  80% [A
+
+
+
+
+
+
+
+
+
+
+
+
+curl-8.21.0          | 190 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libcxsparse-4.4.1    | 118 KB    | #3         |  14% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | #######9   |  80% [A
+
+
+
+
+
+
+
+
+
+
+
+
+curl-8.21.0          | 190 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 6          |   7% 
+perl-5.32.1          | 12.7 MB   | ########   |  80% [A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libcxsparse-4.4.1    | 118 KB    | ####       |  41% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libopenlibm4-0.8.1   | 102 KB    | #5         |  16% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 6          |   7% 
+perl-5.32.1          | 12.7 MB   | ########   |  81% [A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libcxsparse-4.4.1    | 118 KB    | ######7    |  68% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libopenlibm4-0.8.1   | 102 KB    | ######2    |  63% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 7          |   7% 
+perl-5.32.1          | 12.7 MB   | ########1  |  81% [A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libopenlibm4-0.8.1   | 102 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libcxsparse-4.4.1    | 118 KB    | #########5 |  95% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libopenlibm4-0.8.1   | 102 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libopenlibm4-0.8.1   | 102 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libcxsparse-4.4.1    | 118 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+libcxsparse-4.4.1    | 118 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 7          |   7% 
+perl-5.32.1          | 12.7 MB   | ########1  |  82% [A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+zlib-1.3.2           | 94 KB     | #7         |  17% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 7          |   7% 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | ########2  |  82% [A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+zlib-1.3.2           | 94 KB     | ######8    |  68% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | ########2  |  82% [Ajulia-1.12.5         | 165.2 MB  | 7          |   7% 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+zlib-1.3.2           | 94 KB     | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+zlib-1.3.2           | 94 KB     | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[Ajulia-1.12.5         | 165.2 MB  | 7          |   7% 
+perl-5.32.1          | 12.7 MB   | ########2  |  83% [A
+
+
+
+
+
+
+
+
+
+
+libumfpack-6.3.5     | 424 KB    | #########8 |  98% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+libumfpack-6.3.5     | 424 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | ########3  |  83% [Ajulia-1.12.5         | 165.2 MB  | 7          |   7% 
+
+
+
+
+
+
+
+
+
+
+libumfpack-6.3.5     | 424 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A
+perl-5.32.1          | 12.7 MB   | ########3  |  84% [Ajulia-1.12.5         | 165.2 MB  | 7          |   7% julia-1.12.5         | 165.2 MB  | 7          |   7% 
+perl-5.32.1          | 12.7 MB   | ########4  |  84% [A
+perl-5.32.1          | 12.7 MB   | ########4  |  85% [Ajulia-1.12.5         | 165.2 MB  | 7          |   8% 
+perl-5.32.1          | 12.7 MB   | ########5  |  85% [Ajulia-1.12.5         | 165.2 MB  | 7          |   8% julia-1.12.5         | 165.2 MB  | 7          |   8% 
+perl-5.32.1          | 12.7 MB   | ########5  |  86% [A
+perl-5.32.1          | 12.7 MB   | ########6  |  86% [Ajulia-1.12.5         | 165.2 MB  | 7          |   8% julia-1.12.5         | 165.2 MB  | 7          |   8% 
+perl-5.32.1          | 12.7 MB   | ########6  |  87% [Ajulia-1.12.5         | 165.2 MB  | 7          |   8% 
+perl-5.32.1          | 12.7 MB   | ########7  |  87% [Ajulia-1.12.5         | 165.2 MB  | 7          |   8% julia-1.12.5         | 165.2 MB  | 8          |   8% 
+perl-5.32.1          | 12.7 MB   | ########8  |  88% [A
+perl-5.32.1          | 12.7 MB   | ########8  |  88% [Ajulia-1.12.5         | 165.2 MB  | 8          |   8% 
+perl-5.32.1          | 12.7 MB   | ########8  |  89% [Ajulia-1.12.5         | 165.2 MB  | 8          |   8% 
+perl-5.32.1          | 12.7 MB   | ########9  |  90% [Ajulia-1.12.5         | 165.2 MB  | 8          |   8% 
+perl-5.32.1          | 12.7 MB   | #########  |  90% [Ajulia-1.12.5         | 165.2 MB  | 8          |   8% 
+perl-5.32.1          | 12.7 MB   | #########  |  90% [Ajulia-1.12.5         | 165.2 MB  | 8          |   8% 
+perl-5.32.1          | 12.7 MB   | #########  |  91% [Ajulia-1.12.5         | 165.2 MB  | 8          |   8% 
+perl-5.32.1          | 12.7 MB   | #########1 |  91% [Ajulia-1.12.5         | 165.2 MB  | 8          |   9% 
+perl-5.32.1          | 12.7 MB   | #########1 |  92% [Ajulia-1.12.5         | 165.2 MB  | 8          |   9% 
+perl-5.32.1          | 12.7 MB   | #########2 |  92% [Ajulia-1.12.5         | 165.2 MB  | 8          |   9% 
+perl-5.32.1          | 12.7 MB   | #########2 |  93% [Ajulia-1.12.5         | 165.2 MB  | 8          |   9% 
+perl-5.32.1          | 12.7 MB   | #########3 |  93% [Ajulia-1.12.5         | 165.2 MB  | 8          |   9% 
+perl-5.32.1          | 12.7 MB   | #########4 |  94% [Ajulia-1.12.5         | 165.2 MB  | 8          |   9% 
+perl-5.32.1          | 12.7 MB   | #########4 |  95% [Ajulia-1.12.5         | 165.2 MB  | 8          |   9% 
+perl-5.32.1          | 12.7 MB   | #########5 |  95% [A
+perl-5.32.1          | 12.7 MB   | #########5 |  96% [Ajulia-1.12.5         | 165.2 MB  | 8          |   9% julia-1.12.5         | 165.2 MB  | 9          |   9% 
+perl-5.32.1          | 12.7 MB   | #########6 |  97% [Ajulia-1.12.5         | 165.2 MB  | 9          |   9% 
+perl-5.32.1          | 12.7 MB   | #########7 |  97% [Ajulia-1.12.5         | 165.2 MB  | 9          |   9% 
+perl-5.32.1          | 12.7 MB   | #########7 |  98% [A
+perl-5.32.1          | 12.7 MB   | #########8 |  98% [Ajulia-1.12.5         | 165.2 MB  | 9          |   9% julia-1.12.5         | 165.2 MB  | 9          |   9% 
+perl-5.32.1          | 12.7 MB   | #########9 |  99% [A
+perl-5.32.1          | 12.7 MB   | #########9 | 100% [Ajulia-1.12.5         | 165.2 MB  | 9          |   9% 
+perl-5.32.1          | 12.7 MB   | ########## | 100% [Ajulia-1.12.5         | 165.2 MB  | 9          |   9% julia-1.12.5         | 165.2 MB  | 9          |  10% julia-1.12.5         | 165.2 MB  | 9          |  10% julia-1.12.5         | 165.2 MB  | 9          |  10% julia-1.12.5         | 165.2 MB  | 9          |  10% julia-1.12.5         | 165.2 MB  | 9          |  10% julia-1.12.5         | 165.2 MB  | 9          |  10% julia-1.12.5         | 165.2 MB  | 9          |  10% 
+perl-5.32.1          | 12.7 MB   | ########## | 100% [Ajulia-1.12.5         | 165.2 MB  | 9          |  10% julia-1.12.5         | 165.2 MB  | 9          |  10% julia-1.12.5         | 165.2 MB  | 9          |  10% julia-1.12.5         | 165.2 MB  | 9          |  10% julia-1.12.5         | 165.2 MB  | #          |  10% julia-1.12.5         | 165.2 MB  | #          |  10% julia-1.12.5         | 165.2 MB  | #          |  10% julia-1.12.5         | 165.2 MB  | #          |  10% julia-1.12.5         | 165.2 MB  | #          |  10% julia-1.12.5         | 165.2 MB  | #          |  10% julia-1.12.5         | 165.2 MB  | #          |  10% julia-1.12.5         | 165.2 MB  | #          |  10% julia-1.12.5         | 165.2 MB  | #          |  10% julia-1.12.5         | 165.2 MB  | #          |  10% julia-1.12.5         | 165.2 MB  | #          |  11% julia-1.12.5         | 165.2 MB  | #          |  11% julia-1.12.5         | 165.2 MB  | #          |  11% julia-1.12.5         | 165.2 MB  | #          |  11% julia-1.12.5         | 165.2 MB  | #          |  11% julia-1.12.5         | 165.2 MB  | #          |  11% julia-1.12.5         | 165.2 MB  | #          |  11% julia-1.12.5         | 165.2 MB  | #          |  11% julia-1.12.5         | 165.2 MB  | #          |  11% julia-1.12.5         | 165.2 MB  | #          |  11% julia-1.12.5         | 165.2 MB  | #1         |  11% julia-1.12.5         | 165.2 MB  | #1         |  11% julia-1.12.5         | 165.2 MB  | #1         |  11% julia-1.12.5         | 165.2 MB  | #1         |  11% julia-1.12.5         | 165.2 MB  | #1         |  11% julia-1.12.5         | 165.2 MB  | #1         |  12% julia-1.12.5         | 165.2 MB  | #1         |  12% julia-1.12.5         | 165.2 MB  | #1         |  12% julia-1.12.5         | 165.2 MB  | #1         |  12% julia-1.12.5         | 165.2 MB  | #1         |  12% julia-1.12.5         | 165.2 MB  | #1         |  12% julia-1.12.5         | 165.2 MB  | #1         |  12% julia-1.12.5         | 165.2 MB  | #1         |  12% julia-1.12.5         | 165.2 MB  | #2         |  12% julia-1.12.5         | 165.2 MB  | #2         |  12% julia-1.12.5         | 165.2 MB  | #2         |  12% julia-1.12.5         | 165.2 MB  | #2         |  12% julia-1.12.5         | 165.2 MB  | #2         |  12% julia-1.12.5         | 165.2 MB  | #2         |  12% julia-1.12.5         | 165.2 MB  | #2         |  12% julia-1.12.5         | 165.2 MB  | #2         |  12% julia-1.12.5         | 165.2 MB  | #2         |  13% julia-1.12.5         | 165.2 MB  | #2         |  13% julia-1.12.5         | 165.2 MB  | #2         |  13% julia-1.12.5         | 165.2 MB  | #2         |  13% julia-1.12.5         | 165.2 MB  | #2         |  13% julia-1.12.5         | 165.2 MB  | #2         |  13% julia-1.12.5         | 165.2 MB  | #2         |  13% julia-1.12.5         | 165.2 MB  | #3         |  13% julia-1.12.5         | 165.2 MB  | #3         |  13% julia-1.12.5         | 165.2 MB  | #3         |  13% julia-1.12.5         | 165.2 MB  | #3         |  13% julia-1.12.5         | 165.2 MB  | #3         |  13% julia-1.12.5         | 165.2 MB  | #3         |  13% julia-1.12.5         | 165.2 MB  | #3         |  13% julia-1.12.5         | 165.2 MB  | #3         |  13% julia-1.12.5         | 165.2 MB  | #3         |  13% julia-1.12.5         | 165.2 MB  | #3         |  13% julia-1.12.5         | 165.2 MB  | #3         |  14% julia-1.12.5         | 165.2 MB  | #3         |  14% julia-1.12.5         | 165.2 MB  | #3         |  14% julia-1.12.5         | 165.2 MB  | #3         |  14% julia-1.12.5         | 165.2 MB  | #3         |  14% julia-1.12.5         | 165.2 MB  | #3         |  14% julia-1.12.5         | 165.2 MB  | #3         |  14% julia-1.12.5         | 165.2 MB  | #3         |  14% julia-1.12.5         | 165.2 MB  | #3         |  14% julia-1.12.5         | 165.2 MB  | #3         |  14% julia-1.12.5         | 165.2 MB  | #3         |  14% julia-1.12.5         | 165.2 MB  | #4         |  14% julia-1.12.5         | 165.2 MB  | #4         |  14% julia-1.12.5         | 165.2 MB  | #4         |  14% julia-1.12.5         | 165.2 MB  | #4         |  14% julia-1.12.5         | 165.2 MB  | #4         |  14% julia-1.12.5         | 165.2 MB  | #4         |  14% julia-1.12.5         | 165.2 MB  | #4         |  14% julia-1.12.5         | 165.2 MB  | #4         |  14% julia-1.12.5         | 165.2 MB  | #4         |  15% julia-1.12.5         | 165.2 MB  | #4         |  15% 
