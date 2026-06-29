@@ -4,3 +4,5 @@ __pycache__/
 *.o
 .ipynb_checkpoints/
 results/full_run.log
+
+results/*.log
