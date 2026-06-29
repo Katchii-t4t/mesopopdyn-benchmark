@@ -78,8 +78,12 @@ def build_nest_params(scaling, meanfield_connectivity=True):
     # interleaved order
     mu = np.array([19.14942021, 20.36247192, 30.80455243, 28.06868188,
                    29.43680143, 29.32954448, 34.93225564, 32.08123423])
+    # NB: keep these as lists of lists (NOT np.array): the C wrapper
+    # (multipop_c_18) does `if L==[]` / `if J!=0.` per adaptation kernel, which
+    # is ambiguous on ndarray elements. The NEST path wraps with np.array()
+    # itself, so lists work for both backends.
     tau_theta = ([[0.1], [0.1]] * 4)
-    J_theta = np.array([[0.], [0.]] * 4)
+    J_theta = [[0.], [0.]] * 4
     c = np.ones(K) * 10.
     Vreset = [neuron_params['v_reset'] - neuron_params['v_rest']] * K
     Vth = [neuron_params['v_thresh'] - neuron_params['v_rest']] * K
