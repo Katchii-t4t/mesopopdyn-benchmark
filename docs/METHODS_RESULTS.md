@@ -119,15 +119,22 @@ Full-scale mesoscopic, 10 s bio (Julia at 2 s bio, see note):
   bio-second; the *unoptimised* upstream Julia code is **~50–110× slower**
   (≈2×10¹⁰ allocations from type instability) despite identical physics. Same
   algorithm, very different cost — a benchmarking lesson in its own right.
-- **Micro→meso speedup grows with N** (meso flat, micro ~N² for all-to-all):
-  vs the NEST micro baseline, **12× → 37× → 69×** at scalings 0.05/0.10/0.15,
-  extrapolating toward the ~150× of Schwalger et al. (2017) at full scale. The
-  faster C micro baseline gives a smaller but likewise-growing 2×→11× over the
-  same range.
-- *Caveats:* micro used all-to-all (mean-field) connectivity at reduced scale;
-  Julia ran at T=2 s (it is too slow at T=10 s), but cost-per-bio-second
-  normalises for that.
-Figure: `cross_backend.png`; data: `results/cross_backend_summary.json`.
+- **Micro→meso speedup vs the REAL (sparse) network — measured at full scale.**
+  Against sparse, quenched-random PD14 connectivity (not all-to-all), the
+  mesoscopic backend is **~113–161× faster** at full scale (N=77,169):
+  126× vs meso-C, 161× vs meso-Numba, 113× vs meso-NEST. The speedup grows with
+  N (34× at half scale → ~130× at full), a *measured* counterpart to the ~150×
+  of Schwalger et al. (2017). Figure: `speedup_vs_sparse_micro.png`.
+- **Down-scaling robustness (a real finding).** Sparse micro at *reduced* scale
+  deviates from published rates (1.76 Hz at 0.1) because the naive down-scaling
+  preserves mean input but inflates input variance (~1/scaling); the mesoscopic
+  model stays accurate (0.25 Hz) over the same range. Validating at reduced
+  scale therefore needs either full-scale runs or van-Albada 1/√K weight
+  adjustment — the all-to-all comparison hid this entirely.
+- *Caveats:* single seed so far (multi-seed averaging is the next step); Julia
+  ran at T=2 s; only sim time (not setup or energy) is measured.
+Figures: `cross_backend.png`, `speedup_vs_sparse_micro.png`, `language_comparison.png`;
+data: `results/cross_backend_summary.json`.
 
 ## 5. Engineering findings (vs upstream)
 - **Benchmark bug:** upstream times the first Numba call, counting ~7 s of JIT

@@ -607,6 +607,108 @@
       ]
     },
     {
+      "backend": "micro_c_sparse",
+      "scaling": 1.0,
+      "N_total": 77169,
+      "N_per_pop": [
+        20683,
+        5834,
+        21915,
+        5479,
+        4850,
+        1065,
+        14395,
+        2948
+      ],
+      "T": 2.0,
+      "dt": 0.0001,
+      "dt_rec": 0.001,
+      "repeats": 1,
+      "available": true,
+      "connectivity": "sparse",
+      "status": "ok",
+      "warmup_time_s": 78.39760688399997,
+      "time_mean_s": 224.81432321899996,
+      "time_std_s": 0.0,
+      "time_min_s": 224.81432321899996,
+      "times_s": [
+        224.81432321899996
+      ],
+      "realtime_factor": 0.008896230326266739,
+      "mean_rate_hz": [
+        0.9260338391305344,
+        2.776464644642116,
+        4.347659017495827,
+        5.400812672308622,
+        7.680086814975582,
+        8.607857672349889,
+        0.8998007349042978,
+        7.175426694279798
+      ],
+      "mean_abs_rate_err_hz": 0.23881040681632212,
+      "pop_order": [
+        "L23e",
+        "L23i",
+        "L4e",
+        "L4i",
+        "L5e",
+        "L5i",
+        "L6e",
+        "L6i"
+      ]
+    },
+    {
+      "backend": "micro_c_sparse",
+      "scaling": 0.5,
+      "N_total": 38586,
+      "N_per_pop": [
+        10342,
+        2917,
+        10958,
+        2740,
+        2425,
+        532,
+        7198,
+        1474
+      ],
+      "T": 2.0,
+      "dt": 0.0001,
+      "dt_rec": 0.001,
+      "repeats": 1,
+      "available": true,
+      "connectivity": "sparse",
+      "status": "ok",
+      "warmup_time_s": 17.737808562999987,
+      "time_mean_s": 58.97889763799998,
+      "time_std_s": 0.0,
+      "time_min_s": 58.97889763799998,
+      "times_s": [
+        58.97889763799998
+      ],
+      "realtime_factor": 0.033910433733020544,
+      "mean_rate_hz": [
+        0.9732923490315424,
+        2.952564819659708,
+        4.388958799627286,
+        5.5941221667306955,
+        8.326424308193163,
+        8.881084289671547,
+        0.9209429519895879,
+        7.440905520245662
+      ],
+      "mean_abs_rate_err_hz": 0.14693901026012823,
+      "pop_order": [
+        "L23e",
+        "L23i",
+        "L4e",
+        "L4i",
+        "L5e",
+        "L5i",
+        "L6e",
+        "L6i"
+      ]
+    },
+    {
       "backend": "meso_julia",
       "scaling": 0.1,
       "N_total": 7717,
@@ -977,6 +1079,57 @@
         "L6e",
         "L6i"
       ]
+    },
+    {
+      "backend": "micro_nest_sparse",
+      "scaling": 0.1,
+      "N_total": 7717,
+      "N_per_pop": [
+        2068,
+        583,
+        2192,
+        548,
+        485,
+        106,
+        1440,
+        295
+      ],
+      "T": 1.0,
+      "dt": 0.0001,
+      "dt_rec": 0.001,
+      "repeats": 1,
+      "available": true,
+      "connectivity": "sparse",
+      "status": "ok",
+      "warmup_time_s": 5.699499456,
+      "time_mean_s": 11.086367079999999,
+      "time_std_s": 0.0,
+      "time_min_s": 11.086367079999999,
+      "times_s": [
+        11.086367079999999
+      ],
+      "realtime_factor": 0.09020087399090525,
+      "mean_rate_hz": [
+        1.6483988824414322,
+        4.558795502191721,
+        4.899635036496345,
+        7.812246553122445,
+        11.601374570446684,
+        11.519916142557689,
+        1.8063271604938238,
+        9.924670433145073
+      ],
+      "mean_abs_rate_err_hz": 1.7570455351119016,
+      "pop_order": [
+        "L23e",
+        "L23i",
+        "L4e",
+        "L4i",
+        "L5e",
+        "L5i",
+        "L6e",
+        "L6i"
+      ]
     }
   ],
   "comparisons": {
@@ -995,23 +1148,23 @@
     "micro_vs_meso_numba_scaling0.1": {
       "scaling": 0.1,
       "N_total": 7717,
-      "micro_s_per_biosec": 25.881369625499996,
+      "micro_s_per_biosec": 11.086367079999999,
       "meso_s_per_biosec": 0.6879571700002998,
-      "speedup": 37.62061179693602
+      "speedup": 16.11490883944878
     },
     "micro_vs_meso_c_scaling0.1": {
       "scaling": 0.1,
       "N_total": 7717,
-      "micro_s_per_biosec": 25.881369625499996,
+      "micro_s_per_biosec": 11.086367079999999,
       "meso_s_per_biosec": 0.8523653146999998,
-      "speedup": 30.364175053989914
+      "speedup": 13.006591057617095
     },
     "micro_vs_meso_nest_scaling0.1": {
       "scaling": 0.1,
       "N_total": 7717,
-      "micro_s_per_biosec": 25.881369625499996,
+      "micro_s_per_biosec": 11.086367079999999,
       "meso_s_per_biosec": 0.8054939983,
-      "speedup": 32.131052099857705
+      "speedup": 13.763438465584901
     },
     "micro_vs_meso_numba_scaling0.15": {
       "scaling": 0.15,
@@ -1026,6 +1179,48 @@
       "micro_s_per_biosec": 18.880978165499982,
       "meso_s_per_biosec": 0.7031339000001026,
       "speedup": 26.852606829932718
+    },
+    "micro_vs_meso_numba_scaling1.0": {
+      "scaling": 1.0,
+      "N_total": 77169,
+      "micro_s_per_biosec": 112.40716160949998,
+      "meso_s_per_biosec": 0.6974731099995551,
+      "speedup": 161.16343411371324
+    },
+    "micro_vs_meso_c_scaling1.0": {
+      "scaling": 1.0,
+      "N_total": 77169,
+      "micro_s_per_biosec": 112.40716160949998,
+      "meso_s_per_biosec": 0.8944240548000011,
+      "speedup": 125.67546792403178
+    },
+    "micro_vs_meso_nest_scaling1.0": {
+      "scaling": 1.0,
+      "N_total": 77169,
+      "micro_s_per_biosec": 112.40716160949998,
+      "meso_s_per_biosec": 0.9901381616999998,
+      "speedup": 113.52674400156897
+    },
+    "micro_vs_meso_numba_scaling0.5": {
+      "scaling": 0.5,
+      "N_total": 38586,
+      "micro_s_per_biosec": 29.48944881899999,
+      "meso_s_per_biosec": 0.7329102499992587,
+      "speedup": 40.236098238535774
+    },
+    "micro_vs_meso_c_scaling0.5": {
+      "scaling": 0.5,
+      "N_total": 38586,
+      "micro_s_per_biosec": 29.48944881899999,
+      "meso_s_per_biosec": 0.8640995693999998,
+      "speedup": 34.127373584361834
+    },
+    "micro_vs_meso_nest_scaling0.5": {
+      "scaling": 0.5,
+      "N_total": 38586,
+      "micro_s_per_biosec": 29.48944881899999,
+      "meso_s_per_biosec": 0.8836570074000001,
+      "speedup": 33.372053378230234
     }
   }
 }
