@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "timestamp": "2026-06-29T15:40:23.009761",
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+    "python": "3.11.15",
+    "numpy": "2.4.6",
+    "args": {
+      "backends": [
+        "micro_c"
+      ],
+      "scalings": [
+        1.0
+      ],
+      "T": 1.0,
+      "dt": 0.0001,
+      "dt_rec": 0.001,
+      "repeats": 1,
+      "connectivity": "sparse"
+    },
+    "pop_labels": [
+      "L23e",
+      "L23i",
+      "L4e",
+      "L4i",
+      "L5e",
+      "L5i",
+      "L6e",
+      "L6i"
+    ],
+    "target_rates_hz": [
+      0.971,
+      2.868,
+      4.746,
+      5.396,
+      8.142,
+      9.078,
+      0.991,
+      7.523
+    ]
+  },
+  "results": [
+    {
+      "backend": "micro_c_sparse",
+      "scaling": 1.0,
+      "N_total": 77169,
+      "N_per_pop": [
+        20683,
+        5834,
+        21915,
+        5479,
+        4850,
+        1065,
+        14395,
+        2948
+      ],
+      "T": 1.0,
+      "dt": 0.0001,
+      "dt_rec": 0.001,
+      "repeats": 1,
+      "available": true,
+      "connectivity": "sparse",
+      "status": "ok",
+      "warmup_time_s": 79.237569102,
+      "time_mean_s": 152.28043333800002,
+      "time_std_s": 0.0,
+      "time_min_s": 152.28043333800002,
+      "times_s": [
+        152.28043333800002
+      ],
+      "realtime_factor": 0.006566831851472413,
+      "mean_rate_hz": [
+        0.9277613928776719,
+        2.7794918675960845,
+        4.364894668796106,
+        5.408935126036787,
+        7.746391752577319,
+        8.63223787167449,
+        0.9105785187758094,
+        7.174355495251017
+      ],
+      "mean_abs_rate_err_hz": 0.22452794481103588,
+      "pop_order": [
+        "L23e",
+        "L23i",
+        "L4e",
+        "L4i",
+        "L5e",
+        "L5i",
+        "L6e",
+        "L6i"
+      ]
+    }
+  ]
+}

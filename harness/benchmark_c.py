@@ -53,13 +53,16 @@ def _zero_stim(K, tstart, duration):
     return step, tstep
 
 
-def run_one(mp, backend, scaling, T, dt, dt_rec, repeats, seed=123):
-    kwargs, N = build_nest_params(scaling)
+def run_one(mp, backend, scaling, T, dt, dt_rec, repeats, seed=123,
+            meanfield=True):
+    kwargs, N = build_nest_params(scaling, meanfield_connectivity=meanfield)
     K = len(N)
+    label = backend if meanfield else backend + "_sparse"
     rec = {
-        'backend': backend, 'scaling': scaling, 'N_total': int(N.sum()),
+        'backend': label, 'scaling': scaling, 'N_total': int(N.sum()),
         'N_per_pop': [int(x) for x in N], 'T': T, 'dt': dt, 'dt_rec': dt_rec,
         'repeats': repeats, 'available': True,
+        'connectivity': 'meanfield' if meanfield else 'sparse',
     }
     step, tstep = _zero_stim(K, dt, T - dt)
 
@@ -116,6 +119,8 @@ def main():
     ap.add_argument('--dt', type=float, default=0.0001)
     ap.add_argument('--dt_rec', type=float, default=0.001)
     ap.add_argument('--repeats', type=int, default=3)
+    ap.add_argument('--connectivity', choices=['meanfield', 'sparse'],
+                    default='meanfield')
     args = ap.parse_args()
 
     import multipop18 as mp  # real multipop_c_18 (NOT stubbed) + the .so
@@ -138,7 +143,8 @@ def main():
                   end="", flush=True)
             try:
                 rec = run_one(mp, backend, scaling, args.T, args.dt,
-                              args.dt_rec, args.repeats)
+                              args.dt_rec, args.repeats,
+                              meanfield=(args.connectivity == 'meanfield'))
                 print(f"min={rec['time_min_s']:.3f}s "
                       f"(rt x{rec['realtime_factor']:.2f}) "
                       f"rate_err={rec['mean_abs_rate_err_hz']:.3f}Hz")
