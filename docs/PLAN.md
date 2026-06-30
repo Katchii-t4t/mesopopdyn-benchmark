@@ -13,7 +13,7 @@ laying the groundwork for the larger micro→meso reduction project.
 
 ---
 
-## Status (done autonomously, night 1)
+## Status (done so far)
 
 - [x] Reviewed paper (Plesser et al. 2025) + all four repos/links.
 - [x] Single source-of-truth parameter builder (`harness/model_setup.py`).

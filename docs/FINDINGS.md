@@ -129,7 +129,7 @@ genuine finite-size effect. An earlier coupling bug produced a spurious ~20 Hz
 (see METHODS_RESULTS.md §4.4). Cross-validation between backends agree to
 **0.008 Hz** at full scale.
 
-### 3.5 NEST cross-backend (added overnight)
+### 3.5 NEST cross-backend
 NEST 3.10 meso (`gif_pop_psc_exp`) and micro (`gif_psc_exp`) backends now run
 via WSL. meso-NEST matches meso-Numba to 0.008 Hz; micro→meso speedup ~32–36×
 at scaling 0.1 (grows with N). See METHODS_RESULTS.md §4.6.
